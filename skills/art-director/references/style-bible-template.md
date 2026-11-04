@@ -51,9 +51,10 @@ Use these phrases word for word.
 
 ## Prompt template
 - concept_suffix:
-  `<style words>, <palette words>, <shape words>, single object, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text`
+  `<style words>, <shape words>, only the colors named for this object, <world> tones, <texture words>, clean surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text`
 - model_suffix:
-  `<style words>, <palette words>, <shape words>, game asset, single object`
+  `<style words>, <shape words>, only the colors named for this object, <world> tones, <texture words>, single object, no base`
+- Colors live in the subject line (from the material vocabulary), never as a full palette list in a suffix.
 - Subject line pattern: `<object>, <key material from vocabulary>, <one distinguishing feature>`
 
 ## Banned words

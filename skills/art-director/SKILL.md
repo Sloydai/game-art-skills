@@ -74,7 +74,19 @@ presets are in [references/style-decisions.md](references/style-decisions.md).
 7. **Lighting assumption.** No baked lighting, no baked AO in albedo, unless the style is
    hand-painted (which bakes soft top-light by convention). This prevents double shading in
    engine.
-8. **Prompt template.** Assemble decisions 1 to 7 into two fixed suffixes:
+8. **Prompt template.** Assemble decisions 1 to 7 into two fixed suffixes. Field lessons from
+   the launch pack (the first style test failed on all three):
+   - **Never list the whole palette in the suffix.** The generator paints every listed color
+     onto every prop: a potion got an iron collar, amber ring and green tag. Put colors in each
+     subject line instead, using the material vocabulary. The suffix says "only the colors named
+     for this object, muted <world> tones".
+   - **Leave wear out of the generator.** "Light edge wear" came back as stray ivory chips on
+     every corner. Make wear a look-dev variant.
+   - **Say "single object only, no extra props or decorations, no base, no pedestal, no
+     ground".** Without it, a mushroom cluster grew a mossy stone plinth with spikes, and a cart
+     arrived full of rocks with a lantern hanging off it.
+
+   The two suffixes:
    - `concept_suffix` for `generate_image` (adds framing for 3D input, see concept-artist)
    - `model_suffix` for `generate_3d_from_text`
 

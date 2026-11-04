@@ -95,7 +95,9 @@ The runner:
 - Retries a failed job once (Sloyd refunds failed jobs), then marks it failed.
 - Downloads into `concepts/`, `models/`, `variants/` and `parts/` next to the plan.
 
-Forty concept-route props take about 30 to 60 minutes at 5 in flight. Check progress with
+The launch pack (40 props, 31 concept route and 9 text route, 5 variants, 1 split) took 29
+minutes at 5 in flight, with 0 failed jobs. A concept takes about 30 s, a model about 2 min, a
+retexture about 2 min. Check progress with
 `python3 -c "import json;print(json.load(open('art/<pack>/manifest.json'))['totals'])"`.
 
 **Without a shell (MCP-only chat client):** follow the same plan by hand. Keep 5 jobs in flight
@@ -109,6 +111,21 @@ python3 ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/build_gallery.py
 cd art/<pack> && python3 -m http.server 8000      # open http://localhost:8000/gallery.html
 ```
 
+You (the agent) need to see the models too. Render real thumbnails and contact sheets with
+headless Chromium, then open the images:
+
+```bash
+npm i playwright && npx playwright install chromium        # once
+node ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/render_sheet.mjs art/<pack>/manifest.json
+```
+
+This writes:
+- `thumbs/` with one PNG per model, variant and split
+- `contact-sheet.png` with every base model
+- `variants-sheet.png` with each base next to its variants
+
+Review those images, not the concept art. The 3D result is what ships.
+
 Review all assets together. Consistency problems only show side by side.
 
 - [ ] One palette across the pack. Flag any asset whose dominant color is off-bible.
@@ -118,11 +135,18 @@ Review all assets together. Consistency problems only show side by side.
       art/<pack>/models/*.glb`.
 - [ ] Failed assets are listed with their error.
 
-Fix the outliers. Use about 15% of the budget for rerolls.
+Fix the outliers. Use about 15% of the budget for rerolls. The launch pack used 12%:
+- 4 rerolls, 3 of them text-route assets
+- 1 texture fix
+- 1 rejected variant, a thin blade that would not take frost
 
 - **Texture-only problem:** look-dev retexture (15 credits).
-- **Shape problem:** edit the asset's subject line, reset its `model` (and `concept`) job in
-  `manifest.json` to `"status": "planned"` with `attempts: 0`, then re-run with `--only <id>`.
+- **Shape problem:** edit the asset's subject line (switch a text-route asset to `concept`).
+  In `manifest.json`, add the old jobIds to the asset's `rerolls` list with a reason, then set
+  its `jobs` to `{}`. Re-run with `--only <id>`. Notes such as `rerolls` and `export` are kept
+  across runs.
+
+Recording rerolls is how the pack stays auditable: every credit spent maps to a jobId.
 
 ## 6. Hand-off
 

@@ -1,0 +1,76 @@
+{
+  "source": "barrel_parts.glb",
+  "recentered": true,
+  "parts": [
+    {
+      "file": "Barrel_A_Part01.glb",
+      "triangles": 724,
+      "size": [
+        0.7673,
+        0.2067,
+        0.767
+      ],
+      "assembledOffset": [
+        -0.0011,
+        0.7933,
+        0.0003
+      ]
+    },
+    {
+      "file": "Barrel_A_Part02.glb",
+      "triangles": 896,
+      "size": [
+        0.8134,
+        0.1,
+        0.8138
+      ],
+      "assembledOffset": [
+        -0.0005,
+        0.6933,
+        0.0008
+      ]
+    },
+    {
+      "file": "Barrel_A_Part03.glb",
+      "triangles": 848,
+      "size": [
+        0.8122,
+        0.3467,
+        0.8122
+      ],
+      "assembledOffset": [
+        -0.0006,
+        0.3467,
+        0.0001
+      ]
+    },
+    {
+      "file": "Barrel_A_Part04.glb",
+      "triangles": 944,
+      "size": [
+        0.8231,
+        0.1033,
+        0.8246
+      ],
+      "assembledOffset": [
+        0.0,
+        0.2433,
+        0.0
+      ]
+    },
+    {
+      "file": "Barrel_A_Part05.glb",
+      "triangles": 1031,
+      "size": [
+        0.7766,
+        0.2433,
+        0.7749
+      ],
+      "assembledOffset": [
+        -0.0008,
+        0.0,
+        -0.0
+      ]
+    }
+  ]
+}

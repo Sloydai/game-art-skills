@@ -9,9 +9,9 @@
     "topology": "triangles",
     "textureResolution": "1k",
     "aspectRatio": "1:1",
-    "conceptSuffix": "low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, limited palette of slate grey stone, warm oak brown, wrought iron near-black, torch amber, moss green and bone ivory, flat colors with subtle gradient, light edge wear, single object, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
-    "modelSuffix": "low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, slate grey stone, warm oak brown, wrought iron near-black, torch amber accents, flat colors with subtle gradient, single object",
-    "retextureSuffix": "low-poly flat colors with subtle gradient, light edge wear"
+    "conceptSuffix": "low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+    "modelSuffix": "low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+    "retextureSuffix": "low-poly flat colors with subtle gradient, clean surfaces"
   },
   "budgets": {
     "small": 1200,
@@ -31,7 +31,13 @@
       "split": {
         "method": "partition",
         "numberOfParts": 6
-      }
+      },
+      "variants": [
+        {
+          "name": "frozen",
+          "prompt": "surfaces coated in pale blue frost, thick white ice crust on the top rim and upper edges of the staves, frosted iron bands, cold desaturated blue-grey oak"
+        }
+      ]
     },
     {
       "id": "dng_crate_a",
@@ -94,8 +100,8 @@
       "category": "furniture",
       "size": "medium",
       "heightM": 1.0,
-      "route": "text",
-      "subject": "simple wooden chair, warm oak brown, thick legs, straight back"
+      "route": "concept",
+      "subject": "simple wooden chair, warm oak brown, thick legs, straight slatted back"
     },
     {
       "id": "dng_bench_a",
@@ -191,7 +197,7 @@
       "size": "small",
       "heightM": 0.2,
       "route": "concept",
-      "subject": "neat stack of large gold coins, polished gold with stamped crowns"
+      "subject": "short neat stack of six thin flat gold coins, polished gold, stamped crown on the top coin"
     },
     {
       "id": "dng_key_a",
@@ -227,13 +233,7 @@
       "size": "small",
       "heightM": 0.9,
       "route": "concept",
-      "subject": "short sword standing upright, worn steel blade, warm oak brown leather-wrapped grip, round iron pommel",
-      "variants": [
-        {
-          "name": "frozen",
-          "prompt": "blade coated in pale blue frost with a thick white ice crust along the edges, grip dusted with frost, cold desaturated colors"
-        }
-      ]
+      "subject": "short sword standing upright, worn steel blade, warm oak brown leather-wrapped grip, round iron pommel"
     },
     {
       "id": "dng_shield_a",
@@ -364,8 +364,8 @@
       "category": "organic",
       "size": "medium",
       "heightM": 1.0,
-      "route": "text",
-      "subject": "medium boulder, slate grey stone, flat top, moss green on one side"
+      "route": "concept",
+      "subject": "medium boulder, slate grey stone, flat top, small patch of moss green on one side"
     },
     {
       "id": "dng_crystal_a",
@@ -400,8 +400,8 @@
       "category": "props",
       "size": "medium",
       "heightM": 0.8,
-      "route": "text",
-      "subject": "blacksmith anvil on a wooden stump, wrought iron near-black anvil, warm oak brown stump"
+      "route": "concept",
+      "subject": "blacksmith anvil sitting on a short wooden stump, wrought iron near-black anvil, warm oak brown stump"
     },
     {
       "id": "dng_weapon_rack_a",

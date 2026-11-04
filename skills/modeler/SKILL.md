@@ -21,6 +21,14 @@ Sloyd has three ways to make a model. Choosing well saves credits and rerolls. R
 
 Rules of thumb:
 
+- **Measured on the 40-prop launch pack:** 3 of the 9 text-route assets needed a reroll, against
+  1 of the 31 concept-route assets:
+  - a boulder came out as a flat green blob
+  - an anvil had no stump
+  - a chair came out plain and off-palette
+
+  The 5 extra credits for the concept route are cheaper than rerolls. Default to concept, and use
+  text only for the simplest filler.
 - **Consistency beats speed in packs.** The concept route lets you check a 10-credit image before
   committing 20 credits to 3D, and the style lock happens in 2D, where it is cheap to fix.
 - **Text route** is best when `genStyleId` and `model_suffix` carry the style on their own. Use it

@@ -1,6 +1,6 @@
 # Style Bible: Low-Poly Dungeon
 
-Status: draft. Becomes approved after the style test below passes.
+Status: approved (2026-11-04, style test 2 passed)
 Owner: art-director. Every Game Art Department skill reads this file before generating.
 
 ## Game
@@ -42,7 +42,7 @@ things the player can use, pick up or fear.
 
 ## Texture style
 - Treatment: flat color per facet with subtle gradient
-- Wear and dirt: light wear on edges only
+- Wear and dirt: none in the generator ("edge wear" produced stray ivory chips in test 1); add wear as look-dev variants
 - Baked lighting: none (the engine lights it)
 
 ## Material vocabulary
@@ -56,9 +56,9 @@ Use these phrases word for word.
 - magic: glowing teal
 
 ## Prompt template
-- concept_suffix: `low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, limited palette of slate grey stone, warm oak brown, wrought iron near-black, torch amber, moss green and bone ivory, flat colors with subtle gradient, light edge wear, single object, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text`
-- model_suffix: `low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, slate grey stone, warm oak brown, wrought iron near-black, torch amber accents, flat colors with subtle gradient, single object`
-- retexture suffix: `low-poly flat colors with subtle gradient, light edge wear`
+- concept_suffix: `low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text`
+- model_suffix: `low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base`
+- retexture suffix: `low-poly flat colors with subtle gradient, clean surfaces`
 - Subject line pattern: `<object>, <material from vocabulary>, <one distinguishing feature>`
 
 ## Banned words
@@ -68,9 +68,10 @@ masterpiece, depth of field, on a table, in a room, scene, pile of, lots of
 ## Approved references
 | What | jobId | URL |
 |---|---|---|
-| style test 1: health potion | (filled by the style test) | |
-| style test 2: wooden cart | | |
-| style test 3: glowing mushroom cluster | | |
+| style test: health potion | `8uvsejm3` | https://storage.googleapis.com/ai-services-quality/jobs/8uvsejm3.webp |
+| style test: wooden cart | `uuupb8t4` | https://storage.googleapis.com/ai-services-quality/jobs/uuupb8t4.webp |
+| style test: glowing mushroom cluster | `j555x2c5` | https://storage.googleapis.com/ai-services-quality/jobs/j555x2c5.webp |
+| rejected test 1 (palette bleed, wear chips, pedestal) | `t41qy9i0`, `w8dkctup`, `9u0gtqj5` | |
 
 ## Naming
 - Asset id pattern: `dng_<object>_<letter>` (e.g. `dng_barrel_a`), snake_case, unique
@@ -78,3 +79,5 @@ masterpiece, depth of field, on a table, in a room, scene, pile of, lots of
 
 ## Change log
 - 2026-11-04: created for the launch demo pack
+- 2026-11-04: style test 2 passed (60 credits for both tests)
+- 2026-11-04: style test 1 failed: the full palette list in the suffix put every color on every prop, "light edge wear" made ivory chips, and the mushrooms grew a pedestal. Palette words now come only from each subject line; added no base / no extra props; removed wear

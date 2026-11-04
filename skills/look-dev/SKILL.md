@@ -60,6 +60,19 @@ Rules:
 - [ ] Team variants differ only in team color
 - [ ] Readable at game distance: squint test. Could the player tell rusty from normal?
 
+What worked and what did not on the launch pack:
+
+- **Worked first time:** gold and rusty chest, mossy door, mana potion, frozen barrel. These are
+  large surfaces where the effect has room.
+- **Failed twice:** a frozen short sword came back dark green both times, even with explicit
+  colors and hex. Thin objects (blades, keys, wands, staffs) do not take surface effects well,
+  because there is too little surface. For thin objects, make the variant as a new concept
+  instead (concept-artist plus modeler, 30 credits), or apply the effect in the engine with an
+  emissive or frost shader.
+- **Texture fix on a base model:** a stray blue stripe on the anvil stump was fixed with one
+  retexture that named every part's color and added "no blue". Retexture is the cheapest fix
+  when the geometry is right.
+
 If a variant fails, change one phrase and rerun once. If the base texture is the problem (a bad
 source model), fix the base first. Variants inherit its UVs.
 

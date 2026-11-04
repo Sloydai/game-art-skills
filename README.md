@@ -6,6 +6,11 @@ destructible and modular pieces, and import-ready files for Unity, Godot, Unreal
 
 Built for indie game devs. Powered by the [Sloyd API](https://www.sloyd.ai/api).
 
+![40 low-poly dungeon props made by the Game Art Department skills](examples/low-poly-dungeon/images/contact-sheet.png)
+
+*A real run: 40 props, 5 variants and a destructible barrel in 29 minutes for 1,495 credits (~$20).
+[See the pack](examples/low-poly-dungeon/).*
+
 ```
 /plugin marketplace add Sloydai/game-art-skills
 /plugin install game-art@sloyd-game-art
@@ -101,25 +106,26 @@ spending.
 | Retexture variant | 15 |
 | Split into parts | 40 |
 
-A 40-prop pack with 5 variants and one destructible split is about 1,270 credits (~$17). See
-`examples/low-poly-dungeon/plan.json`.
+The launch pack was planned at 1,270 credits (40 props, 5 variants, 1 split). It came in at
+1,495 credits (~$20) once style tests, 4 rerolls, a texture fix and a rejected variant were
+included. That is 12% over plan, inside the 15% reserve the planner adds. Full breakdown:
+[examples/low-poly-dungeon](examples/low-poly-dungeon/README.md).
 Current prices: [sloyd.ai/api/pricing](https://www.sloyd.ai/api/pricing).
 
 ## Example: low-poly dungeon (40 props)
 
-`examples/low-poly-dungeon/` holds the style bible and the 40-asset plan used for the launch
-demo:
+[`examples/low-poly-dungeon/`](examples/low-poly-dungeon/) is the real output of one run:
 
-- containers, furniture and lighting
-- loot, hazards and architecture dressing
-- organic props
-- 5 retexture variants and a destructible barrel
+- the style bible, including the failed first style test and what changed
+- the plan, the full `manifest.json` (every jobId and URL), the concept images
+- rendered contact sheets, a browsable `gallery.html` and per-engine `IMPORT.md` files
 
 ## Requirements
 
 - Python 3.9+ for the helper scripts (standard library only)
 - A Sloyd API key with credits
 - Optional:
+  - Node.js 18+ with Playwright, for rendered thumbnails and contact sheets (`render_sheet.mjs`)
   - Unity's glTFast importer (`com.unity.cloud.gltfast`)
   - the [Sloyd Godot Bridge](https://github.com/Sloydai/sloyd-godot-bridge)
   - `npx gltfpack` for LODs

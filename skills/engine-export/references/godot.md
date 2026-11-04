@@ -64,6 +64,9 @@ project files.
 
 ## Pitfalls
 
+- Sloyd GLBs ship normal maps without tangents. The Khronos validator flags this as a warning
+  (`MESH_PRIMITIVE_GENERATED_TANGENT_SPACE`), not an error. Godot's importer generates tangents
+  by default ("Ensure Tangents" on), so leave it on.
 - If a model is enormous, it is the raw file. Use `export/godot/`.
 - Duplicate node names get auto-suffixed (`Barrel2`). That is fine, but keep scene names unique
   per asset id.

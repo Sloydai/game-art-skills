@@ -164,6 +164,7 @@ class Manifest:
             a = merged(raw, d, plan.get("budgets", {}))
             prev = old.get(a["id"], {})
             entry = {
+                **{k: v for k, v in prev.items() if k not in ("jobs", "status")},  # keep notes like rerolls, export
                 "id": a["id"],
                 "name": a.get("name", a["id"]),
                 "category": a.get("category", ""),
@@ -347,9 +348,11 @@ class Runner:
                 return  # later stages depend on these
 
 
-def print_estimate(man: Manifest, balance: int | None) -> int:
+def print_estimate(man: Manifest, balance: int | None, only: set[str] | None = None) -> int:
     by_tool: dict[str, list[int]] = {}
     for a in man.data["assets"]:
+        if only and a["id"] not in only:
+            continue
         for j in a["jobs"].values():
             if j["status"] in DONE:
                 continue
@@ -395,7 +398,8 @@ def main() -> int:
     except sloyd.SloydError as err:
         print(err, file=sys.stderr)
         return 1
-    total = print_estimate(man, balance)
+    only = set(args.only.split(",")) if args.only else None
+    total = print_estimate(man, balance, only)
     if args.estimate:
         return 0
     if total == 0:
@@ -411,7 +415,7 @@ def main() -> int:
     cap = args.max_concurrent or int(plan.get("maxConcurrent", 5))
     cap = max(1, min(cap, 5))
     runner = Runner(api, man, out, download=not args.no_download)
-    todo = [a for a in man.data["assets"] if not args.only or a["id"] in args.only.split(",")]
+    todo = [a for a in man.data["assets"] if not only or a["id"] in only]
     log(f"Running {len(todo)} assets with up to {cap} concurrent jobs. Manifest: {man.path}")
     t0 = time.time()
     with cf.ThreadPoolExecutor(max_workers=cap) as pool:

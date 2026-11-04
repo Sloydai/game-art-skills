@@ -100,6 +100,12 @@ and `EnablePBR` (set automatically from `textureResolution`).
   `split_model_into_parts` later (model stages only).
 - To redo a stage, set its `status` to `planned` and `attempts` to `0`, then re-run with
   `--only <id>`. Later stages that depend on it should be reset too.
+- `assets[].rerolls[]`: `{reason, previous: {stage: jobId}}` for every replaced attempt.
+  `assets[].rejected[]`: `{stage, jobIds, reason}` for attempts that were dropped. The runner
+  keeps both across runs.
+- `spend` (optional, written by the agent at delivery): the real balance before and after, and
+  a breakdown. `totals.creditsSpentEstimate` only counts the current jobs, not rerolls or style
+  tests.
 - Never put credentials in either file.
 
 engine-export adds an `export` block per asset (file names per engine, triangle counts, scale).

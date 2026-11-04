@@ -21,7 +21,7 @@ in one batch.
 | Limit | Value | What to do |
 |---|---|---|
 | Triangles per mesh | 20,000 | `glb_tool.py inspect` reports `maxTrianglesPerMesh`. Regenerate with a lower `targetFaceCount`, or split with kitbasher (`partition`) |
-| Texture size | 1024 x 1024 | Larger textures are downscaled. Use `textureResolution: "1k"` or lower in the bible |
+| Texture size | 1024 x 1024 | Larger textures are downscaled. Use `textureResolution: "1k"` or lower in the bible. Even then, check: on the launch pack, 4 of 40 models requested at `1k` came back with one 2048 px texture. `glb_tool.py export --engine roblox` warns about each one |
 
 The `Roblox` genStyleId plus budgets of 500 to 15,000 faces keeps packs comfortably inside both.
 
