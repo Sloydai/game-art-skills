@@ -67,8 +67,10 @@ export/kit/           barrel part offsets (assembled and library pivots)
 
 GLBs are not committed (about 100 MB per engine). To get them:
 
-- **Download the release zip:** see the PR / release notes.
-- **Rebuild them locally for free from this manifest.** Every job is finished, so nothing is
+- **Single models:** every model, variant and split has a public URL in `manifest.json`
+  (`jobs.<stage>.url`), for example the
+  [treasure chest](https://storage.googleapis.com/ai-services-quality/jobs/xzfo7yax.glb).
+- **The whole pack, engine-ready: rebuild it locally for free from this manifest.** Every job is finished, so nothing is
   charged, but your own Sloyd key is still needed for the balance check:
 
   ```bash
