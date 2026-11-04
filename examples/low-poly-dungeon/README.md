@@ -1,8 +1,8 @@
 # Low-Poly Dungeon Props (40)
 
 This is a real pack, made end to end by the Game Art Department skills with the Sloyd API on
-2026-11-04. Every model below is an actual GLB from that run. `manifest.json` lists every jobId,
-URL, triangle count and rerolled or rejected attempt.
+2026-11-04. Every image below is a render of an actual GLB from that run. `run-record.json` lists every
+asset's settings, triangle count, export names, rerolls and the credit spend.
 
 ![All 40 props](images/contact-sheet.png)
 
@@ -57,33 +57,20 @@ Credit breakdown:
 style-bible.md        the locked look (approved after style test 2)
 style-test/           the 3 approved test images
 plan.json             the 40-asset plan (subjects, sizes, heights, routes, variants, split)
-manifest.json         every job: jobId, URL, triangles, export names, rerolls, spend
+run-record.json       every asset: settings, triangles, export names, rerolls, spend
 concepts/             the 34 concept images that went into image-to-3D
-gallery.html          orbit every model in the browser (loads the public Sloyd URLs)
 images/               rendered contact sheets
 export/<engine>/      IMPORT.md per engine with every file, triangle count, size and pivot
 export/kit/           barrel part offsets (assembled and library pivots)
 ```
 
-GLBs are not committed (about 100 MB per engine). To get them:
-
-- **Single models:** every model, variant and split has a public URL in `manifest.json`
-  (`jobs.<stage>.url`), for example the
-  [treasure chest](https://storage.googleapis.com/ai-services-quality/jobs/xzfo7yax.glb).
-- **The whole pack, engine-ready: rebuild it locally for free from this manifest.** Every job is finished, so nothing is
-  charged, but your own Sloyd key is still needed for the balance check:
-
-  ```bash
-  python3 skills/asset-pack-builder/scripts/run_pack.py examples/low-poly-dungeon/plan.json --yes
-  python3 skills/engine-export/scripts/glb_tool.py export examples/low-poly-dungeon/manifest.json --engine godot --godot-collision convcol
-  ```
-
-Every exported GLB passes the Khronos glTF validator with 0 errors. The only warning comes from
-Sloyd sources: no stored tangents, which engines generate on import.
-
-## Preview
+The 3D models themselves are not included. Concept images and renders are, so you can judge
+the quality. To make this pack (or your own version of it), run the plan with your own Sloyd key.
+It costs about 1,270 credits plus rerolls:
 
 ```bash
-cd examples/low-poly-dungeon && python3 -m http.server 8000
-# open http://localhost:8000/gallery.html
+mkdir -p art/my-dungeon && cp examples/low-poly-dungeon/{plan.json,style-bible.md} art/my-dungeon/
+python3 skills/asset-pack-builder/scripts/run_pack.py art/my-dungeon/plan.json --estimate
 ```
+
+Every exported GLB from the launch run passed the Khronos glTF validator with 0 errors.
