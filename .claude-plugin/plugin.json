@@ -1,0 +1,15 @@
+{
+  "name": "game-art",
+  "displayName": "Game Art Department",
+  "description": "A full 3D art department for indie game devs, powered by the Sloyd API: art director (style bible), concept artist, modeler, look-dev, asset pack builder, kitbasher and engine export for Unity, Godot, Unreal and Roblox. One prompt to a consistent, engine-ready asset pack.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Sloyd",
+    "url": "https://www.sloyd.ai"
+  },
+  "homepage": "https://github.com/Sloydai/game-art-skills",
+  "repository": "https://github.com/Sloydai/game-art-skills",
+  "license": "MIT",
+  "privacyPolicyUrl": "https://www.sloyd.ai/privacy-policy",
+  "keywords": ["game-art", "3d", "gamedev", "asset-pack", "sloyd", "unity", "godot", "unreal", "roblox", "glb"]
+}

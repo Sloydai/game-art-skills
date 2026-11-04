@@ -1,0 +1,17 @@
+{
+  "name": "sloyd-game-art",
+  "owner": {
+    "name": "Sloyd",
+    "url": "https://www.sloyd.ai"
+  },
+  "metadata": {
+    "description": "Sloyd skill teams for coding agents."
+  },
+  "plugins": [
+    {
+      "name": "game-art",
+      "description": "Game Art Department: style bible, concepts, 3D models, variants, modular parts and engine export for indie games, powered by the Sloyd API.",
+      "source": "./"
+    }
+  ]
+}
