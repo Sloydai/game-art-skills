@@ -2,7 +2,7 @@
 
 Every number and image below comes from the real run in
 [`examples/low-poly-dungeon/`](examples/low-poly-dungeon/), made on 2026-11-04 against the live
-Sloyd API. Source of each claim: `manifest.json` (jobIds, spend) and `images/` (renders of the
+Sloyd API. Source of each claim: `run-record.json` (spend, rerolls) and `images/` (renders of the
 actual GLBs).
 
 ## Main post
@@ -93,7 +93,7 @@ palette for overlays and the end card: navy `#0b1833` background, white text, CT
 | 4 | 10 to 13 s | Plan grouped by category, cost estimate, the user types "yes" | `run_pack.py --estimate` output |
 | 5 | 13 to 20 s | Timelapse: models appearing while the log shows 5 jobs in flight; counter 0 → 40 | Screen recording, sped up |
 | 6 | 20 to 24 s | Hero frame: the 40-prop contact sheet | `images/contact-sheet.png` |
-| 7 | 24 to 27 s | Look-dev: the chest swaps base → gold → rusty | `gallery.html` variant buttons |
+| 7 | 24 to 27 s | Look-dev: the chest swaps base → gold → rusty | `gallery.html` variant buttons (local, from your own run) |
 | 8 | 27 to 30 s | Kitbasher: the barrel shatters into its 5 split pieces in Godot | `export/kit/` parts + rigid bodies |
 | 9 | 30 to 33 s | Engine export: `export/godot/` dropped into `res://`; props land at the right size on the floor | Godot FileSystem dock |
 | 10 | 33 to 36 s | End card: folder tree, install line, `github.com/Sloydai/game-art-skills`, Sloyd logo | Static card |
@@ -109,7 +109,7 @@ Capture notes:
 
 ## Proof checklist before posting
 
-- [x] `manifest.json` shows `done: 40` and `spend.credits: 1495`, matching tweet 4
+- [x] `run-record.json` shows `done: 40` and `spend.credits: 1495`, matching tweet 4
 - [x] The contact sheet is a render of that run's actual GLBs (`render_sheet.mjs`)
 - [x] Every exported GLB passes the Khronos glTF validator with 0 errors
 - [ ] Godot scene for the video built only from that run's `export/godot/`

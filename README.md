@@ -117,8 +117,9 @@ Current prices: [sloyd.ai/api/pricing](https://www.sloyd.ai/api/pricing).
 [`examples/low-poly-dungeon/`](examples/low-poly-dungeon/) is the real output of one run:
 
 - the style bible, including the failed first style test and what changed
-- the plan, the full `manifest.json` (every jobId and URL), the concept images
-- rendered contact sheets, a browsable `gallery.html` and per-engine `IMPORT.md` files
+- the plan, a run record (settings, triangles, spend, rerolls) and the concept images
+- rendered contact sheets and per-engine `IMPORT.md` files
+- the 3D models are not included: run the plan with your own Sloyd key to make them
 
 ## Requirements
 
