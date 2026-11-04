@@ -1,0 +1,4526 @@
+{
+  "schema": "sloyd-game-art/manifest@1",
+  "pack": "low-poly-dungeon",
+  "title": "Low-Poly Dungeon Props (40)",
+  "styleBible": "style-bible.md",
+  "genStyleId": "Polygonal",
+  "textureResolution": "1k",
+  "topology": "triangles",
+  "createdAt": "2026-11-04T12:30:18Z",
+  "assets": [
+    {
+      "id": "dng_barrel_a",
+      "name": "Wooden Barrel",
+      "category": "containers",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "text",
+      "subject": "wooden barrel, warm oak brown staves with wrought iron bands",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_barrel_a.glb",
+            "name": "dng_barrel_a",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_barrel_a_frozen.glb",
+            "name": "dng_barrel_a_frozen",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_barrel_a_parts.glb",
+            "name": "dng_barrel_a_parts",
+            "triangles": 4443,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Barrel_A.glb",
+            "name": "Dng_Barrel_A",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Barrel_A_Frozen.glb",
+            "name": "Dng_Barrel_A_Frozen",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Barrel_A_Parts.glb",
+            "name": "Dng_Barrel_A_Parts",
+            "triangles": 4443,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Barrel_A.glb",
+            "name": "SM_Dng_Barrel_A",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Barrel_A_Frozen.glb",
+            "name": "SM_Dng_Barrel_A_Frozen",
+            "triangles": 2999,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Barrel_A_Parts.glb",
+            "name": "SM_Dng_Barrel_A_Parts",
+            "triangles": 4443,
+            "size": [
+              0.8231,
+              1.0,
+              0.8246
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBarrelA.glb",
+            "name": "DngBarrelA",
+            "triangles": 2999,
+            "size": [
+              2.9396,
+              3.5714,
+              2.9451
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngBarrelAFrozen.glb",
+            "name": "DngBarrelAFrozen",
+            "triangles": 2999,
+            "size": [
+              2.9396,
+              3.5714,
+              2.9451
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngBarrelAParts.glb",
+            "name": "DngBarrelAParts",
+            "triangles": 4443,
+            "size": [
+              2.9396,
+              3.5714,
+              2.9451
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "wooden barrel, warm oak brown staves with wrought iron bands, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "2xxyq0jb",
+          "submittedAt": "2026-11-04T12:48:02Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/2xxyq0jb.glb",
+          "finishedAt": "2026-11-04T12:50:15Z",
+          "file": "models/dng_barrel_a.glb"
+        },
+        "split": {
+          "tool": "split_model_into_parts",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "method": "partition",
+            "numberOfParts": 6,
+            "attachmentPoints": false
+          },
+          "estimate": 40,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "yapq2is1",
+          "submittedAt": "2026-11-04T12:50:16Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/yapq2is1.glb",
+          "finishedAt": "2026-11-04T12:51:27Z",
+          "file": "parts/dng_barrel_a__parts.glb"
+        },
+        "variant:frozen": {
+          "tool": "retexture_model",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "prompt": "surfaces coated in pale blue frost, thick white ice crust on the top rim and upper edges of the staves, frosted iron bands, cold desaturated blue-grey oak, low-poly flat colors with subtle gradient, clean surfaces",
+            "textureResolution": "1k"
+          },
+          "estimate": 15,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "vgewsomg",
+          "submittedAt": "2026-11-04T13:23:27Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/vgewsomg.glb",
+          "finishedAt": "2026-11-04T13:25:29Z",
+          "file": "variants/dng_barrel_a__frozen.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_crate_a",
+      "name": "Wooden Crate",
+      "category": "containers",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "text",
+      "subject": "wooden crate, warm oak brown planks with iron corner brackets",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_crate_a.glb",
+            "name": "dng_crate_a",
+            "triangles": 3000,
+            "size": [
+              1.2458,
+              0.8,
+              1.2429
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Crate_A.glb",
+            "name": "Dng_Crate_A",
+            "triangles": 3000,
+            "size": [
+              1.2458,
+              0.8,
+              1.2429
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Crate_A.glb",
+            "name": "SM_Dng_Crate_A",
+            "triangles": 3000,
+            "size": [
+              1.2458,
+              0.8,
+              1.2429
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCrateA.glb",
+            "name": "DngCrateA",
+            "triangles": 3000,
+            "size": [
+              4.4491,
+              2.8571,
+              4.4388
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "wooden crate, warm oak brown planks with iron corner brackets, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "vo4dzqpr",
+          "submittedAt": "2026-11-04T12:30:20Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/vo4dzqpr.glb",
+          "finishedAt": "2026-11-04T12:32:22Z",
+          "file": "models/dng_crate_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_chest_a",
+      "name": "Treasure Chest",
+      "category": "containers",
+      "size": "hero",
+      "heightM": 0.7,
+      "route": "concept",
+      "subject": "treasure chest, warm oak brown planks with wrought iron bands, domed lid with a skull-shaped lock",
+      "targetFaceCount": 10000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_chest_a.glb",
+            "name": "dng_chest_a",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_chest_a_gold.glb",
+            "name": "dng_chest_a_gold",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_chest_a_rusty.glb",
+            "name": "dng_chest_a_rusty",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Chest_A.glb",
+            "name": "Dng_Chest_A",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Chest_A_Gold.glb",
+            "name": "Dng_Chest_A_Gold",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Chest_A_Rusty.glb",
+            "name": "Dng_Chest_A_Rusty",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Chest_A.glb",
+            "name": "SM_Dng_Chest_A",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Chest_A_Gold.glb",
+            "name": "SM_Dng_Chest_A_Gold",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Chest_A_Rusty.glb",
+            "name": "SM_Dng_Chest_A_Rusty",
+            "triangles": 10000,
+            "size": [
+              0.7484,
+              0.7,
+              0.5716
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngChestA.glb",
+            "name": "DngChestA",
+            "triangles": 10000,
+            "size": [
+              2.6729,
+              2.5,
+              2.0413
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngChestAGold.glb",
+            "name": "DngChestAGold",
+            "triangles": 10000,
+            "size": [
+              2.6729,
+              2.5,
+              2.0413
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngChestARusty.glb",
+            "name": "DngChestARusty",
+            "triangles": 10000,
+            "size": [
+              2.6729,
+              2.5,
+              2.0413
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "treasure chest, warm oak brown planks with wrought iron bands, domed lid with a skull-shaped lock, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "ey5iwjun",
+          "submittedAt": "2026-11-04T12:30:19Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/ey5iwjun.webp",
+          "finishedAt": "2026-11-04T12:30:49Z",
+          "file": "concepts/dng_chest_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 10000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "xzfo7yax",
+          "submittedAt": "2026-11-04T12:30:51Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/xzfo7yax.glb",
+          "finishedAt": "2026-11-04T12:32:43Z",
+          "file": "models/dng_chest_a.glb"
+        },
+        "variant:gold": {
+          "tool": "retexture_model",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "prompt": "polished gold metal replacing all iron bands and the lock, warm yellow highlights on the edges, oak stained deep red-brown, small ruby inlay on the lock, low-poly flat colors with subtle gradient, clean surfaces",
+            "textureResolution": "1k"
+          },
+          "estimate": 15,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "w6x0hmo7",
+          "submittedAt": "2026-11-04T12:32:45Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/w6x0hmo7.glb",
+          "finishedAt": "2026-11-04T12:34:26Z",
+          "file": "variants/dng_chest_a__gold.glb"
+        },
+        "variant:rusty": {
+          "tool": "retexture_model",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "prompt": "wrought iron bands heavily oxidized, orange-brown rust collecting in crevices and along edges, oak planks darker and water-stained, low-poly flat colors with subtle gradient, clean surfaces",
+            "textureResolution": "1k"
+          },
+          "estimate": 15,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "lca5ra1w",
+          "submittedAt": "2026-11-04T12:34:28Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/lca5ra1w.glb",
+          "finishedAt": "2026-11-04T12:36:30Z",
+          "file": "variants/dng_chest_a__rusty.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_urn_a",
+      "name": "Clay Urn",
+      "category": "containers",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "tall clay urn, terracotta with a bone ivory painted band, two small handles",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_urn_a.glb",
+            "name": "dng_urn_a",
+            "triangles": 1200,
+            "size": [
+              0.2399,
+              0.6,
+              0.1865
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Urn_A.glb",
+            "name": "Dng_Urn_A",
+            "triangles": 1200,
+            "size": [
+              0.2399,
+              0.6,
+              0.1865
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Urn_A.glb",
+            "name": "SM_Dng_Urn_A",
+            "triangles": 1200,
+            "size": [
+              0.2399,
+              0.6,
+              0.1865
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngUrnA.glb",
+            "name": "DngUrnA",
+            "triangles": 1200,
+            "size": [
+              0.8567,
+              2.1429,
+              0.6661
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "tall clay urn, terracotta with a bone ivory painted band, two small handles, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "5w6bqftn",
+          "submittedAt": "2026-11-04T12:48:03Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/5w6bqftn.webp",
+          "finishedAt": "2026-11-04T12:48:33Z",
+          "file": "concepts/dng_urn_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "uc6n1ols",
+          "submittedAt": "2026-11-04T12:48:35Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/uc6n1ols.glb",
+          "finishedAt": "2026-11-04T12:50:37Z",
+          "file": "models/dng_urn_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_coffin_a",
+      "name": "Stone Coffin",
+      "category": "containers",
+      "size": "large",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "stone sarcophagus lying flat, slate grey stone, carved skull on the lid",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_coffin_a.glb",
+            "name": "dng_coffin_a",
+            "triangles": 6000,
+            "size": [
+              0.6821,
+              0.6,
+              1.4252
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Coffin_A.glb",
+            "name": "Dng_Coffin_A",
+            "triangles": 6000,
+            "size": [
+              0.6821,
+              0.6,
+              1.4252
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Coffin_A.glb",
+            "name": "SM_Dng_Coffin_A",
+            "triangles": 6000,
+            "size": [
+              0.6821,
+              0.6,
+              1.4252
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCoffinA.glb",
+            "name": "DngCoffinA",
+            "triangles": 6000,
+            "size": [
+              2.4359,
+              2.1429,
+              5.09
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "stone sarcophagus lying flat, slate grey stone, carved skull on the lid, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "gx7c2b9q",
+          "submittedAt": "2026-11-04T12:48:03Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/gx7c2b9q.webp",
+          "finishedAt": "2026-11-04T12:48:33Z",
+          "file": "concepts/dng_coffin_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "fl6zq9ny",
+          "submittedAt": "2026-11-04T12:48:34Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/fl6zq9ny.glb",
+          "finishedAt": "2026-11-04T12:50:57Z",
+          "file": "models/dng_coffin_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_table_a",
+      "name": "Heavy Table",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "heavy wooden table, warm oak brown, thick square legs, one corner chipped",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_table_a.glb",
+            "name": "dng_table_a",
+            "triangles": 3000,
+            "size": [
+              1.2625,
+              0.8,
+              1.0541
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Table_A.glb",
+            "name": "Dng_Table_A",
+            "triangles": 3000,
+            "size": [
+              1.2625,
+              0.8,
+              1.0541
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Table_A.glb",
+            "name": "SM_Dng_Table_A",
+            "triangles": 3000,
+            "size": [
+              1.2625,
+              0.8,
+              1.0541
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngTableA.glb",
+            "name": "DngTableA",
+            "triangles": 3000,
+            "size": [
+              4.5088,
+              2.8571,
+              3.7646
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "heavy wooden table, warm oak brown, thick square legs, one corner chipped, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "x0lbr8p0",
+          "submittedAt": "2026-11-04T12:48:04Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/x0lbr8p0.webp",
+          "finishedAt": "2026-11-04T12:48:34Z",
+          "file": "concepts/dng_table_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "svlan53p",
+          "submittedAt": "2026-11-04T12:48:35Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/svlan53p.glb",
+          "finishedAt": "2026-11-04T12:50:37Z",
+          "file": "models/dng_table_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_chair_a",
+      "name": "Wooden Chair",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "simple wooden chair, warm oak brown, thick legs, straight slatted back",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_chair_a.glb",
+            "name": "dng_chair_a",
+            "triangles": 3000,
+            "size": [
+              0.5078,
+              1.0,
+              0.5295
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Chair_A.glb",
+            "name": "Dng_Chair_A",
+            "triangles": 3000,
+            "size": [
+              0.5078,
+              1.0,
+              0.5295
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Chair_A.glb",
+            "name": "SM_Dng_Chair_A",
+            "triangles": 3000,
+            "size": [
+              0.5078,
+              1.0,
+              0.5295
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngChairA.glb",
+            "name": "DngChairA",
+            "triangles": 3000,
+            "size": [
+              1.8136,
+              3.5714,
+              1.8912
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "simple wooden chair, warm oak brown, thick legs, straight slatted back, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "4l95heqh",
+          "submittedAt": "2026-11-04T13:14:51Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/4l95heqh.webp",
+          "finishedAt": "2026-11-04T13:15:11Z",
+          "file": "concepts/dng_chair_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "8wag8pwx",
+          "submittedAt": "2026-11-04T13:15:12Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/8wag8pwx.glb",
+          "finishedAt": "2026-11-04T13:17:14Z",
+          "file": "models/dng_chair_a.glb"
+        }
+      },
+      "status": "done",
+      "rerolls": [
+        {
+          "reason": "text route chair looked off-palette and plain; rerouted to concept with a new subject line",
+          "previous": {
+            "model": "at7b4exl"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dng_bench_a",
+      "name": "Wooden Bench",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 0.5,
+      "route": "text",
+      "subject": "long wooden bench, warm oak brown, thick plank seat on two block legs",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_bench_a.glb",
+            "name": "dng_bench_a",
+            "triangles": 3000,
+            "size": [
+              1.4084,
+              0.5,
+              0.57
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Bench_A.glb",
+            "name": "Dng_Bench_A",
+            "triangles": 3000,
+            "size": [
+              1.4084,
+              0.5,
+              0.57
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Bench_A.glb",
+            "name": "SM_Dng_Bench_A",
+            "triangles": 3000,
+            "size": [
+              1.4084,
+              0.5,
+              0.57
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBenchA.glb",
+            "name": "DngBenchA",
+            "triangles": 3000,
+            "size": [
+              5.03,
+              1.7857,
+              2.0358
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "long wooden bench, warm oak brown, thick plank seat on two block legs, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "uc16935m",
+          "submittedAt": "2026-11-04T12:50:17Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/uc16935m.glb",
+          "finishedAt": "2026-11-04T12:52:30Z",
+          "file": "models/dng_bench_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_bookshelf_a",
+      "name": "Bookshelf",
+      "category": "furniture",
+      "size": "large",
+      "heightM": 2.0,
+      "route": "concept",
+      "subject": "tall wooden bookshelf, warm oak brown, three shelves of chunky books in muted red, green and ivory",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_bookshelf_a.glb",
+            "name": "dng_bookshelf_a",
+            "triangles": 6000,
+            "size": [
+              1.138,
+              2.0,
+              0.4634
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Bookshelf_A.glb",
+            "name": "Dng_Bookshelf_A",
+            "triangles": 6000,
+            "size": [
+              1.138,
+              2.0,
+              0.4634
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Bookshelf_A.glb",
+            "name": "SM_Dng_Bookshelf_A",
+            "triangles": 6000,
+            "size": [
+              1.138,
+              2.0,
+              0.4634
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBookshelfA.glb",
+            "name": "DngBookshelfA",
+            "triangles": 6000,
+            "size": [
+              4.0644,
+              7.1429,
+              1.655
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "tall wooden bookshelf, warm oak brown, three shelves of chunky books in muted red, green and ivory, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "51xgmo0b",
+          "submittedAt": "2026-11-04T12:50:38Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/51xgmo0b.webp",
+          "finishedAt": "2026-11-04T12:51:08Z",
+          "file": "concepts/dng_bookshelf_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "i9qywf6u",
+          "submittedAt": "2026-11-04T12:51:09Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/i9qywf6u.glb",
+          "finishedAt": "2026-11-04T12:52:52Z",
+          "file": "models/dng_bookshelf_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_stool_a",
+      "name": "Stool",
+      "category": "furniture",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "text",
+      "subject": "three-legged wooden stool, warm oak brown, round seat",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_stool_a.glb",
+            "name": "dng_stool_a",
+            "triangles": 1200,
+            "size": [
+              0.6384,
+              0.5,
+              0.6294
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Stool_A.glb",
+            "name": "Dng_Stool_A",
+            "triangles": 1200,
+            "size": [
+              0.6384,
+              0.5,
+              0.6294
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Stool_A.glb",
+            "name": "SM_Dng_Stool_A",
+            "triangles": 1200,
+            "size": [
+              0.6384,
+              0.5,
+              0.6294
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngStoolA.glb",
+            "name": "DngStoolA",
+            "triangles": 1200,
+            "size": [
+              2.2798,
+              1.7857,
+              2.248
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "three-legged wooden stool, warm oak brown, round seat, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "ynq0nork",
+          "submittedAt": "2026-11-04T12:50:39Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/ynq0nork.glb",
+          "finishedAt": "2026-11-04T12:53:33Z",
+          "file": "models/dng_stool_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_throne_a",
+      "name": "Bone Throne",
+      "category": "furniture",
+      "size": "hero",
+      "heightM": 2.0,
+      "route": "concept",
+      "subject": "stone throne, slate grey stone with bone ivory skulls on the armrests, tall pointed back",
+      "targetFaceCount": 10000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_throne_a.glb",
+            "name": "dng_throne_a",
+            "triangles": 10000,
+            "size": [
+              1.2787,
+              2.0,
+              0.8296
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Throne_A.glb",
+            "name": "Dng_Throne_A",
+            "triangles": 10000,
+            "size": [
+              1.2787,
+              2.0,
+              0.8296
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Throne_A.glb",
+            "name": "SM_Dng_Throne_A",
+            "triangles": 10000,
+            "size": [
+              1.2787,
+              2.0,
+              0.8296
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngThroneA.glb",
+            "name": "DngThroneA",
+            "triangles": 10000,
+            "size": [
+              4.5666,
+              7.1429,
+              2.9628
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "stone throne, slate grey stone with bone ivory skulls on the armrests, tall pointed back, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "05csh2gu",
+          "submittedAt": "2026-11-04T12:50:59Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/05csh2gu.webp",
+          "finishedAt": "2026-11-04T12:51:29Z",
+          "file": "concepts/dng_throne_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 10000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "58gp283z",
+          "submittedAt": "2026-11-04T12:51:30Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/58gp283z.glb",
+          "finishedAt": "2026-11-04T12:53:43Z",
+          "file": "models/dng_throne_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_wall_torch_a",
+      "name": "Wall Torch",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "iron wall sconce holding a torch, wrought iron near-black, flame as a solid stylized torch amber shape",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_wall_torch_a.glb",
+            "name": "dng_wall_torch_a",
+            "triangles": 1200,
+            "size": [
+              0.2682,
+              0.6,
+              0.1495
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Wall_Torch_A.glb",
+            "name": "Dng_Wall_Torch_A",
+            "triangles": 1200,
+            "size": [
+              0.2682,
+              0.6,
+              0.1495
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Wall_Torch_A.glb",
+            "name": "SM_Dng_Wall_Torch_A",
+            "triangles": 1200,
+            "size": [
+              0.2682,
+              0.6,
+              0.1495
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngWallTorchA.glb",
+            "name": "DngWallTorchA",
+            "triangles": 1200,
+            "size": [
+              0.9578,
+              2.1429,
+              0.534
+            ],
+            "pivot": "back-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "iron wall sconce holding a torch, wrought iron near-black, flame as a solid stylized torch amber shape, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "nezwxp5g",
+          "submittedAt": "2026-11-04T12:51:29Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/nezwxp5g.webp",
+          "finishedAt": "2026-11-04T12:51:59Z",
+          "file": "concepts/dng_wall_torch_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "hpn2x5zk",
+          "submittedAt": "2026-11-04T12:52:00Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/hpn2x5zk.glb",
+          "finishedAt": "2026-11-04T12:53:52Z",
+          "file": "models/dng_wall_torch_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_brazier_a",
+      "name": "Brazier",
+      "category": "lighting",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "iron brazier bowl on three legs, wrought iron near-black, solid stylized torch amber flames rising from coals",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_brazier_a.glb",
+            "name": "dng_brazier_a",
+            "triangles": 3000,
+            "size": [
+              0.912,
+              1.0,
+              0.915
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Brazier_A.glb",
+            "name": "Dng_Brazier_A",
+            "triangles": 3000,
+            "size": [
+              0.912,
+              1.0,
+              0.915
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Brazier_A.glb",
+            "name": "SM_Dng_Brazier_A",
+            "triangles": 3000,
+            "size": [
+              0.912,
+              1.0,
+              0.915
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBrazierA.glb",
+            "name": "DngBrazierA",
+            "triangles": 3000,
+            "size": [
+              3.2573,
+              3.5714,
+              3.2677
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "iron brazier bowl on three legs, wrought iron near-black, solid stylized torch amber flames rising from coals, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "7rv1smx7",
+          "submittedAt": "2026-11-04T12:52:31Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/7rv1smx7.webp",
+          "finishedAt": "2026-11-04T12:53:02Z",
+          "file": "concepts/dng_brazier_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "dojh9ebm",
+          "submittedAt": "2026-11-04T12:53:03Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/dojh9ebm.glb",
+          "finishedAt": "2026-11-04T12:55:46Z",
+          "file": "models/dng_brazier_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_candelabra_a",
+      "name": "Candelabra",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.7,
+      "route": "concept",
+      "subject": "standing iron candelabra with three thick candles, wrought iron near-black, bone ivory wax, solid amber flames",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_candelabra_a.glb",
+            "name": "dng_candelabra_a",
+            "triangles": 1200,
+            "size": [
+              0.3491,
+              0.7,
+              0.2188
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Candelabra_A.glb",
+            "name": "Dng_Candelabra_A",
+            "triangles": 1200,
+            "size": [
+              0.3491,
+              0.7,
+              0.2188
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Candelabra_A.glb",
+            "name": "SM_Dng_Candelabra_A",
+            "triangles": 1200,
+            "size": [
+              0.3491,
+              0.7,
+              0.2188
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCandelabraA.glb",
+            "name": "DngCandelabraA",
+            "triangles": 1200,
+            "size": [
+              1.2469,
+              2.5,
+              0.7816
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "standing iron candelabra with three thick candles, wrought iron near-black, bone ivory wax, solid amber flames, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "u1r6wpn6",
+          "submittedAt": "2026-11-04T12:52:53Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/u1r6wpn6.webp",
+          "finishedAt": "2026-11-04T12:53:23Z",
+          "file": "concepts/dng_candelabra_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "fur2o581",
+          "submittedAt": "2026-11-04T12:53:24Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/fur2o581.glb",
+          "finishedAt": "2026-11-04T12:55:16Z",
+          "file": "models/dng_candelabra_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_lantern_a",
+      "name": "Hanging Lantern",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "concept",
+      "subject": "hanging iron lantern with a ring on top, wrought iron near-black frame, glowing torch amber panels",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_lantern_a.glb",
+            "name": "dng_lantern_a",
+            "triangles": 1200,
+            "size": [
+              0.2501,
+              0.5,
+              0.2252
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Lantern_A.glb",
+            "name": "Dng_Lantern_A",
+            "triangles": 1200,
+            "size": [
+              0.2501,
+              0.5,
+              0.2252
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Lantern_A.glb",
+            "name": "SM_Dng_Lantern_A",
+            "triangles": 1200,
+            "size": [
+              0.2501,
+              0.5,
+              0.2252
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngLanternA.glb",
+            "name": "DngLanternA",
+            "triangles": 1200,
+            "size": [
+              0.8931,
+              1.7857,
+              0.8043
+            ],
+            "pivot": "top-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "hanging iron lantern with a ring on top, wrought iron near-black frame, glowing torch amber panels, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "jxn36fqp",
+          "submittedAt": "2026-11-04T12:53:35Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/jxn36fqp.webp",
+          "finishedAt": "2026-11-04T12:54:05Z",
+          "file": "concepts/dng_lantern_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "667kc2b4",
+          "submittedAt": "2026-11-04T12:54:06Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/667kc2b4.glb",
+          "finishedAt": "2026-11-04T12:56:07Z",
+          "file": "models/dng_lantern_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_potion_a",
+      "name": "Health Potion",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "concept",
+      "subject": "round potion bottle with a cork, opaque glass filled with glowing crimson red liquid, small rope tied at the neck",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_potion_a.glb",
+            "name": "dng_potion_a",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_potion_a_mana.glb",
+            "name": "dng_potion_a_mana",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Potion_A.glb",
+            "name": "Dng_Potion_A",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Potion_A_Mana.glb",
+            "name": "Dng_Potion_A_Mana",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Potion_A.glb",
+            "name": "SM_Dng_Potion_A",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Potion_A_Mana.glb",
+            "name": "SM_Dng_Potion_A_Mana",
+            "triangles": 1200,
+            "size": [
+              0.2,
+              0.3,
+              0.2079
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngPotionA.glb",
+            "name": "DngPotionA",
+            "triangles": 1200,
+            "size": [
+              0.7145,
+              1.0714,
+              0.7425
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngPotionAMana.glb",
+            "name": "DngPotionAMana",
+            "triangles": 1200,
+            "size": [
+              0.7145,
+              1.0714,
+              0.7425
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "round potion bottle with a cork, opaque glass filled with glowing crimson red liquid, small rope tied at the neck, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "mkrliwx3",
+          "submittedAt": "2026-11-04T12:53:44Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/mkrliwx3.webp",
+          "finishedAt": "2026-11-04T12:54:15Z",
+          "file": "concepts/dng_potion_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "7i0izrrl",
+          "submittedAt": "2026-11-04T12:54:16Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/7i0izrrl.glb",
+          "finishedAt": "2026-11-04T12:57:19Z",
+          "file": "models/dng_potion_a.glb"
+        },
+        "variant:mana": {
+          "tool": "retexture_model",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "prompt": "same bottle, opaque glass filled with glowing royal blue liquid, cork and rope unchanged, low-poly flat colors with subtle gradient, clean surfaces",
+            "textureResolution": "1k"
+          },
+          "estimate": 15,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "mvxttt3b",
+          "submittedAt": "2026-11-04T12:57:21Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/mvxttt3b.glb",
+          "finishedAt": "2026-11-04T12:59:22Z",
+          "file": "variants/dng_potion_a__mana.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_coins_a",
+      "name": "Coin Stack",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.2,
+      "route": "concept",
+      "subject": "short neat stack of six thin flat gold coins, polished gold, stamped crown on the top coin",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_coins_a.glb",
+            "name": "dng_coins_a",
+            "triangles": 1200,
+            "size": [
+              0.1716,
+              0.2,
+              0.1718
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Coins_A.glb",
+            "name": "Dng_Coins_A",
+            "triangles": 1200,
+            "size": [
+              0.1716,
+              0.2,
+              0.1718
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Coins_A.glb",
+            "name": "SM_Dng_Coins_A",
+            "triangles": 1200,
+            "size": [
+              0.1716,
+              0.2,
+              0.1718
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCoinsA.glb",
+            "name": "DngCoinsA",
+            "triangles": 1200,
+            "size": [
+              0.6127,
+              0.7143,
+              0.6136
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "short neat stack of six thin flat gold coins, polished gold, stamped crown on the top coin, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "f54crcfm",
+          "submittedAt": "2026-11-04T13:14:52Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/f54crcfm.webp",
+          "finishedAt": "2026-11-04T13:15:22Z",
+          "file": "concepts/dng_coins_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "2uhmx8l5",
+          "submittedAt": "2026-11-04T13:15:24Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/2uhmx8l5.glb",
+          "finishedAt": "2026-11-04T13:17:16Z",
+          "file": "models/dng_coins_a.glb"
+        }
+      },
+      "status": "done",
+      "rerolls": [
+        {
+          "reason": "concept route made a tall soft column; new subject line asked for a short stack of thin coins (still reads as a chunky stack)",
+          "previous": {
+            "model": "3spd0kr1",
+            "concept": "smhrfh3l"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dng_key_a",
+      "name": "Dungeon Key",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "concept",
+      "subject": "large ornate dungeon key, wrought iron near-black with a ring-shaped bow, chunky teeth",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_key_a.glb",
+            "name": "dng_key_a",
+            "triangles": 1200,
+            "size": [
+              0.556,
+              0.25,
+              1.735
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Key_A.glb",
+            "name": "Dng_Key_A",
+            "triangles": 1200,
+            "size": [
+              0.556,
+              0.25,
+              1.735
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Key_A.glb",
+            "name": "SM_Dng_Key_A",
+            "triangles": 1200,
+            "size": [
+              0.556,
+              0.25,
+              1.735
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngKeyA.glb",
+            "name": "DngKeyA",
+            "triangles": 1200,
+            "size": [
+              1.9856,
+              0.8929,
+              6.1963
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "large ornate dungeon key, wrought iron near-black with a ring-shaped bow, chunky teeth, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "kt2j77po",
+          "submittedAt": "2026-11-04T12:55:18Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/kt2j77po.webp",
+          "finishedAt": "2026-11-04T12:55:48Z",
+          "file": "concepts/dng_key_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "mb8ckp40",
+          "submittedAt": "2026-11-04T12:55:49Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/mb8ckp40.glb",
+          "finishedAt": "2026-11-04T12:57:20Z",
+          "file": "models/dng_key_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_scroll_a",
+      "name": "Scroll",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "text",
+      "subject": "rolled parchment scroll, bone ivory paper, red wax seal, tied with a cord",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_scroll_a.glb",
+            "name": "dng_scroll_a",
+            "triangles": 1200,
+            "size": [
+              1.3717,
+              0.3,
+              0.3072
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Scroll_A.glb",
+            "name": "Dng_Scroll_A",
+            "triangles": 1200,
+            "size": [
+              1.3717,
+              0.3,
+              0.3072
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Scroll_A.glb",
+            "name": "SM_Dng_Scroll_A",
+            "triangles": 1200,
+            "size": [
+              1.3717,
+              0.3,
+              0.3072
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngScrollA.glb",
+            "name": "DngScrollA",
+            "triangles": 1200,
+            "size": [
+              4.899,
+              1.0714,
+              1.0973
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "rolled parchment scroll, bone ivory paper, red wax seal, tied with a cord, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "84bb7k12",
+          "submittedAt": "2026-11-04T12:55:47Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/84bb7k12.glb",
+          "finishedAt": "2026-11-04T12:57:49Z",
+          "file": "models/dng_scroll_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_skull_a",
+      "name": "Skull",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "text",
+      "subject": "human skull, bone ivory, slightly cracked forehead",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_skull_a.glb",
+            "name": "dng_skull_a",
+            "triangles": 1200,
+            "size": [
+              0.1749,
+              0.25,
+              0.2178
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Skull_A.glb",
+            "name": "Dng_Skull_A",
+            "triangles": 1200,
+            "size": [
+              0.1749,
+              0.25,
+              0.2178
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Skull_A.glb",
+            "name": "SM_Dng_Skull_A",
+            "triangles": 1200,
+            "size": [
+              0.1749,
+              0.25,
+              0.2178
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngSkullA.glb",
+            "name": "DngSkullA",
+            "triangles": 1200,
+            "size": [
+              0.6247,
+              0.8929,
+              0.7777
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "model": {
+          "tool": "generate_3d_from_text",
+          "args": {
+            "prompt": "human skull, bone ivory, slightly cracked forehead, low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 25,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "0knq4ylk",
+          "submittedAt": "2026-11-04T12:56:09Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/0knq4ylk.glb",
+          "finishedAt": "2026-11-04T12:58:31Z",
+          "file": "models/dng_skull_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_sword_a",
+      "name": "Short Sword",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.9,
+      "route": "concept",
+      "subject": "short sword standing upright, worn steel blade, warm oak brown leather-wrapped grip, round iron pommel",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_sword_a.glb",
+            "name": "dng_sword_a",
+            "triangles": 1200,
+            "size": [
+              0.2619,
+              0.9,
+              0.0938
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Sword_A.glb",
+            "name": "Dng_Sword_A",
+            "triangles": 1200,
+            "size": [
+              0.2619,
+              0.9,
+              0.0938
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Sword_A.glb",
+            "name": "SM_Dng_Sword_A",
+            "triangles": 1200,
+            "size": [
+              0.2619,
+              0.9,
+              0.0938
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngSwordA.glb",
+            "name": "DngSwordA",
+            "triangles": 1200,
+            "size": [
+              0.9354,
+              3.2143,
+              0.335
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "short sword standing upright, worn steel blade, warm oak brown leather-wrapped grip, round iron pommel, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "5jp1froi",
+          "submittedAt": "2026-11-04T12:56:39Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/5jp1froi.webp",
+          "finishedAt": "2026-11-04T12:57:09Z",
+          "file": "concepts/dng_sword_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "0f5pg1eh",
+          "submittedAt": "2026-11-04T12:57:10Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/0f5pg1eh.glb",
+          "finishedAt": "2026-11-04T13:00:02Z",
+          "file": "models/dng_sword_a.glb"
+        }
+      },
+      "status": "done",
+      "rejected": [
+        {
+          "stage": "variant:frozen",
+          "jobIds": [
+            "ff5cy0xg",
+            "szualg89"
+          ],
+          "reason": "two retextures came out dark green; frost on a thin blade does not read, moved the frozen variant to the barrel"
+        }
+      ]
+    },
+    {
+      "id": "dng_shield_a",
+      "name": "Round Shield",
+      "category": "loot",
+      "size": "medium",
+      "heightM": 0.9,
+      "route": "concept",
+      "subject": "round wooden shield standing upright, warm oak brown planks, wrought iron rim and central boss",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_shield_a.glb",
+            "name": "dng_shield_a",
+            "triangles": 3000,
+            "size": [
+              0.8889,
+              0.9,
+              0.1779
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Shield_A.glb",
+            "name": "Dng_Shield_A",
+            "triangles": 3000,
+            "size": [
+              0.8889,
+              0.9,
+              0.1779
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Shield_A.glb",
+            "name": "SM_Dng_Shield_A",
+            "triangles": 3000,
+            "size": [
+              0.8889,
+              0.9,
+              0.1779
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngShieldA.glb",
+            "name": "DngShieldA",
+            "triangles": 3000,
+            "size": [
+              3.1746,
+              3.2143,
+              0.6355
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "round wooden shield standing upright, warm oak brown planks, wrought iron rim and central boss, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "ugl9r9kq",
+          "submittedAt": "2026-11-04T12:57:21Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/ugl9r9kq.webp",
+          "finishedAt": "2026-11-04T12:57:52Z",
+          "file": "concepts/dng_shield_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "1r6wxezy",
+          "submittedAt": "2026-11-04T12:57:52Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/1r6wxezy.glb",
+          "finishedAt": "2026-11-04T13:00:05Z",
+          "file": "models/dng_shield_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_axe_a",
+      "name": "Battle Axe",
+      "category": "loot",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "single-bladed battle axe standing upright, worn steel head, warm oak brown handle with iron wraps",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_axe_a.glb",
+            "name": "dng_axe_a",
+            "triangles": 3000,
+            "size": [
+              0.3403,
+              1.0,
+              0.109
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Axe_A.glb",
+            "name": "Dng_Axe_A",
+            "triangles": 3000,
+            "size": [
+              0.3403,
+              1.0,
+              0.109
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Axe_A.glb",
+            "name": "SM_Dng_Axe_A",
+            "triangles": 3000,
+            "size": [
+              0.3403,
+              1.0,
+              0.109
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngAxeA.glb",
+            "name": "DngAxeA",
+            "triangles": 3000,
+            "size": [
+              1.2155,
+              3.5714,
+              0.3892
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "single-bladed battle axe standing upright, worn steel head, warm oak brown handle with iron wraps, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "pk75darw",
+          "submittedAt": "2026-11-04T12:57:50Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/pk75darw.webp",
+          "finishedAt": "2026-11-04T12:58:20Z",
+          "file": "concepts/dng_axe_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "5pc1hqwa",
+          "submittedAt": "2026-11-04T12:58:21Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/5pc1hqwa.glb",
+          "finishedAt": "2026-11-04T13:01:26Z",
+          "file": "models/dng_axe_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_spellbook_a",
+      "name": "Spellbook",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "concept",
+      "subject": "closed thick spellbook, dark green leather cover, gold corner caps, glowing teal rune on the cover",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_spellbook_a.glb",
+            "name": "dng_spellbook_a",
+            "triangles": 1200,
+            "size": [
+              0.2946,
+              0.3,
+              0.2872
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Spellbook_A.glb",
+            "name": "Dng_Spellbook_A",
+            "triangles": 1200,
+            "size": [
+              0.2946,
+              0.3,
+              0.2872
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Spellbook_A.glb",
+            "name": "SM_Dng_Spellbook_A",
+            "triangles": 1200,
+            "size": [
+              0.2946,
+              0.3,
+              0.2872
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngSpellbookA.glb",
+            "name": "DngSpellbookA",
+            "triangles": 1200,
+            "size": [
+              1.052,
+              1.0714,
+              1.0258
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "closed thick spellbook, dark green leather cover, gold corner caps, glowing teal rune on the cover, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "xhgglw4y",
+          "submittedAt": "2026-11-04T12:58:32Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/xhgglw4y.webp",
+          "finishedAt": "2026-11-04T12:59:02Z",
+          "file": "concepts/dng_spellbook_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "vbqmnsob",
+          "submittedAt": "2026-11-04T12:59:03Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/vbqmnsob.glb",
+          "finishedAt": "2026-11-04T13:01:35Z",
+          "file": "models/dng_spellbook_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_spike_trap_a",
+      "name": "Spike Trap",
+      "category": "hazards",
+      "size": "medium",
+      "heightM": 0.4,
+      "route": "concept",
+      "subject": "square floor spike trap, slate grey stone tile with chunky iron spikes raised",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_spike_trap_a.glb",
+            "name": "dng_spike_trap_a",
+            "triangles": 3000,
+            "size": [
+              0.8145,
+              0.4,
+              0.8158
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Spike_Trap_A.glb",
+            "name": "Dng_Spike_Trap_A",
+            "triangles": 3000,
+            "size": [
+              0.8145,
+              0.4,
+              0.8158
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Spike_Trap_A.glb",
+            "name": "SM_Dng_Spike_Trap_A",
+            "triangles": 3000,
+            "size": [
+              0.8145,
+              0.4,
+              0.8158
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngSpikeTrapA.glb",
+            "name": "DngSpikeTrapA",
+            "triangles": 3000,
+            "size": [
+              2.9091,
+              1.4286,
+              2.9134
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "square floor spike trap, slate grey stone tile with chunky iron spikes raised, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "halejs5s",
+          "submittedAt": "2026-11-04T12:59:24Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/halejs5s.webp",
+          "finishedAt": "2026-11-04T12:59:54Z",
+          "file": "concepts/dng_spike_trap_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "nzfggdwz",
+          "submittedAt": "2026-11-04T12:59:55Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/nzfggdwz.glb",
+          "finishedAt": "2026-11-04T13:01:47Z",
+          "file": "models/dng_spike_trap_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_bear_trap_a",
+      "name": "Bear Trap",
+      "category": "hazards",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "concept",
+      "subject": "open iron bear trap, wrought iron near-black with chunky jagged jaws, lying flat",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_bear_trap_a.glb",
+            "name": "dng_bear_trap_a",
+            "triangles": 1200,
+            "size": [
+              1.0423,
+              0.25,
+              0.9226
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Bear_Trap_A.glb",
+            "name": "Dng_Bear_Trap_A",
+            "triangles": 1200,
+            "size": [
+              1.0423,
+              0.25,
+              0.9226
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Bear_Trap_A.glb",
+            "name": "SM_Dng_Bear_Trap_A",
+            "triangles": 1200,
+            "size": [
+              1.0423,
+              0.25,
+              0.9226
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBearTrapA.glb",
+            "name": "DngBearTrapA",
+            "triangles": 1200,
+            "size": [
+              3.7224,
+              0.8929,
+              3.2949
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "open iron bear trap, wrought iron near-black with chunky jagged jaws, lying flat, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "u2m2woos",
+          "submittedAt": "2026-11-04T13:00:06Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/u2m2woos.webp",
+          "finishedAt": "2026-11-04T13:00:37Z",
+          "file": "concepts/dng_bear_trap_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "be9s0pa2",
+          "submittedAt": "2026-11-04T13:00:38Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/be9s0pa2.glb",
+          "finishedAt": "2026-11-04T13:02:50Z",
+          "file": "models/dng_bear_trap_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_lever_a",
+      "name": "Wall Lever",
+      "category": "hazards",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "dungeon wall lever on a stone plate, slate grey stone plate, wrought iron lever with a torch amber handle grip",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_lever_a.glb",
+            "name": "dng_lever_a",
+            "triangles": 1200,
+            "size": [
+              0.328,
+              0.6,
+              0.3379
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Lever_A.glb",
+            "name": "Dng_Lever_A",
+            "triangles": 1200,
+            "size": [
+              0.328,
+              0.6,
+              0.3379
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Lever_A.glb",
+            "name": "SM_Dng_Lever_A",
+            "triangles": 1200,
+            "size": [
+              0.328,
+              0.6,
+              0.3379
+            ],
+            "pivot": "back-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngLeverA.glb",
+            "name": "DngLeverA",
+            "triangles": 1200,
+            "size": [
+              1.1715,
+              2.1429,
+              1.2068
+            ],
+            "pivot": "back-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "dungeon wall lever on a stone plate, slate grey stone plate, wrought iron lever with a torch amber handle grip, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "m29zr1n9",
+          "submittedAt": "2026-11-04T13:01:28Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/m29zr1n9.webp",
+          "finishedAt": "2026-11-04T13:01:58Z",
+          "file": "concepts/dng_lever_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "jaeqfr4e",
+          "submittedAt": "2026-11-04T13:01:59Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/jaeqfr4e.glb",
+          "finishedAt": "2026-11-04T13:03:51Z",
+          "file": "models/dng_lever_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_pillar_a",
+      "name": "Stone Pillar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 3.0,
+      "route": "concept",
+      "subject": "square stone pillar, slate grey blocks, moss green in the joints, wide base and capital",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_pillar_a.glb",
+            "name": "dng_pillar_a",
+            "triangles": 6000,
+            "size": [
+              1.3275,
+              3.0,
+              1.3326
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Pillar_A.glb",
+            "name": "Dng_Pillar_A",
+            "triangles": 6000,
+            "size": [
+              1.3275,
+              3.0,
+              1.3326
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Pillar_A.glb",
+            "name": "SM_Dng_Pillar_A",
+            "triangles": 6000,
+            "size": [
+              1.3275,
+              3.0,
+              1.3326
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngPillarA.glb",
+            "name": "DngPillarA",
+            "triangles": 6000,
+            "size": [
+              4.7412,
+              10.7143,
+              4.7592
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "square stone pillar, slate grey blocks, moss green in the joints, wide base and capital, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "ktguootw",
+          "submittedAt": "2026-11-04T13:01:38Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/ktguootw.webp",
+          "finishedAt": "2026-11-04T13:02:08Z",
+          "file": "concepts/dng_pillar_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "s3080393",
+          "submittedAt": "2026-11-04T13:02:09Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/s3080393.glb",
+          "finishedAt": "2026-11-04T13:04:21Z",
+          "file": "models/dng_pillar_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_pillar_broken_a",
+      "name": "Broken Pillar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 1.6,
+      "route": "concept",
+      "subject": "broken stone pillar, slate grey blocks, jagged snapped top, moss green in the joints",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_pillar_broken_a.glb",
+            "name": "dng_pillar_broken_a",
+            "triangles": 6000,
+            "size": [
+              0.4178,
+              1.6,
+              0.4065
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Pillar_Broken_A.glb",
+            "name": "Dng_Pillar_Broken_A",
+            "triangles": 6000,
+            "size": [
+              0.4178,
+              1.6,
+              0.4065
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Pillar_Broken_A.glb",
+            "name": "SM_Dng_Pillar_Broken_A",
+            "triangles": 6000,
+            "size": [
+              0.4178,
+              1.6,
+              0.4065
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngPillarBrokenA.glb",
+            "name": "DngPillarBrokenA",
+            "triangles": 6000,
+            "size": [
+              1.4923,
+              5.7143,
+              1.4519
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "broken stone pillar, slate grey blocks, jagged snapped top, moss green in the joints, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "o3q4dmij",
+          "submittedAt": "2026-11-04T13:01:47Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/o3q4dmij.webp",
+          "finishedAt": "2026-11-04T13:02:18Z",
+          "file": "concepts/dng_pillar_broken_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "8n396t4j",
+          "submittedAt": "2026-11-04T13:02:19Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/8n396t4j.glb",
+          "finishedAt": "2026-11-04T13:04:10Z",
+          "file": "models/dng_pillar_broken_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_archway_a",
+      "name": "Stone Archway",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 3.5,
+      "route": "concept",
+      "subject": "freestanding stone archway, slate grey blocks with a keystone, moss green in the joints",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_archway_a.glb",
+            "name": "dng_archway_a",
+            "triangles": 6000,
+            "size": [
+              2.6588,
+              3.5,
+              0.7121
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Archway_A.glb",
+            "name": "Dng_Archway_A",
+            "triangles": 6000,
+            "size": [
+              2.6588,
+              3.5,
+              0.7121
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Archway_A.glb",
+            "name": "SM_Dng_Archway_A",
+            "triangles": 6000,
+            "size": [
+              2.6588,
+              3.5,
+              0.7121
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngArchwayA.glb",
+            "name": "DngArchwayA",
+            "triangles": 6000,
+            "size": [
+              9.4956,
+              12.5,
+              2.543
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "freestanding stone archway, slate grey blocks with a keystone, moss green in the joints, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "cu4eunry",
+          "submittedAt": "2026-11-04T13:01:49Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/cu4eunry.webp",
+          "finishedAt": "2026-11-04T13:02:19Z",
+          "file": "concepts/dng_archway_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "hw2ev720",
+          "submittedAt": "2026-11-04T13:02:20Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/hw2ev720.glb",
+          "finishedAt": "2026-11-04T13:05:03Z",
+          "file": "models/dng_archway_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_door_a",
+      "name": "Dungeon Door",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 2.4,
+      "route": "concept",
+      "subject": "arched wooden dungeon door in a stone frame, warm oak brown planks, wrought iron hinges and ring handle, slate grey stone frame",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_door_a.glb",
+            "name": "dng_door_a",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/godot/dng_door_a_mossy.glb",
+            "name": "dng_door_a_mossy",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Door_A.glb",
+            "name": "Dng_Door_A",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unity/Dng_Door_A_Mossy.glb",
+            "name": "Dng_Door_A_Mossy",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Door_A.glb",
+            "name": "SM_Dng_Door_A",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/unreal/SM_Dng_Door_A_Mossy.glb",
+            "name": "SM_Dng_Door_A_Mossy",
+            "triangles": 6000,
+            "size": [
+              1.6524,
+              2.4,
+              0.3962
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngDoorA.glb",
+            "name": "DngDoorA",
+            "triangles": 6000,
+            "size": [
+              5.9013,
+              8.5714,
+              1.4151
+            ],
+            "pivot": "bottom-center"
+          },
+          {
+            "file": "export/roblox/DngDoorAMossy.glb",
+            "name": "DngDoorAMossy",
+            "triangles": 6000,
+            "size": [
+              5.9013,
+              8.5714,
+              1.4151
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "arched wooden dungeon door in a stone frame, warm oak brown planks, wrought iron hinges and ring handle, slate grey stone frame, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "qxwycfd0",
+          "submittedAt": "2026-11-04T13:02:51Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/qxwycfd0.webp",
+          "finishedAt": "2026-11-04T13:03:22Z",
+          "file": "concepts/dng_door_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "vkn5mba3",
+          "submittedAt": "2026-11-04T13:03:23Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/vkn5mba3.glb",
+          "finishedAt": "2026-11-04T13:05:15Z",
+          "file": "models/dng_door_a.glb"
+        },
+        "variant:mossy": {
+          "tool": "retexture_model",
+          "args": {
+            "jobId": {
+              "$from": "model"
+            },
+            "prompt": "green moss patches on the stone frame and bottom of the door, damp darker oak, iron hinges with green patina, low-poly flat colors with subtle gradient, clean surfaces",
+            "textureResolution": "1k"
+          },
+          "estimate": 15,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "ctk3mlxd",
+          "submittedAt": "2026-11-04T13:05:16Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/ctk3mlxd.glb",
+          "finishedAt": "2026-11-04T13:07:18Z",
+          "file": "variants/dng_door_a__mossy.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_gargoyle_a",
+      "name": "Gargoyle Statue",
+      "category": "architecture",
+      "size": "hero",
+      "heightM": 1.5,
+      "route": "concept",
+      "subject": "crouching gargoyle statue on a square plinth, slate grey stone, wings folded, horns",
+      "targetFaceCount": 10000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_gargoyle_a.glb",
+            "name": "dng_gargoyle_a",
+            "triangles": 10000,
+            "size": [
+              1.1117,
+              1.5,
+              0.9333
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Gargoyle_A.glb",
+            "name": "Dng_Gargoyle_A",
+            "triangles": 10000,
+            "size": [
+              1.1117,
+              1.5,
+              0.9333
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Gargoyle_A.glb",
+            "name": "SM_Dng_Gargoyle_A",
+            "triangles": 10000,
+            "size": [
+              1.1117,
+              1.5,
+              0.9333
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngGargoyleA.glb",
+            "name": "DngGargoyleA",
+            "triangles": 10000,
+            "size": [
+              3.9705,
+              5.3571,
+              3.3334
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "crouching gargoyle statue on a square plinth, slate grey stone, wings folded, horns, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "6ib4si6r",
+          "submittedAt": "2026-11-04T13:03:53Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/6ib4si6r.webp",
+          "finishedAt": "2026-11-04T13:04:23Z",
+          "file": "concepts/dng_gargoyle_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 10000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "x9xbl2ck",
+          "submittedAt": "2026-11-04T13:04:24Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/x9xbl2ck.glb",
+          "finishedAt": "2026-11-04T13:06:17Z",
+          "file": "models/dng_gargoyle_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_altar_a",
+      "name": "Ritual Altar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "stone ritual altar block, slate grey stone, carved runes glowing teal on the front",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_altar_a.glb",
+            "name": "dng_altar_a",
+            "triangles": 5999,
+            "size": [
+              1.5734,
+              1.0,
+              1.1478
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Altar_A.glb",
+            "name": "Dng_Altar_A",
+            "triangles": 5999,
+            "size": [
+              1.5734,
+              1.0,
+              1.1478
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Altar_A.glb",
+            "name": "SM_Dng_Altar_A",
+            "triangles": 5999,
+            "size": [
+              1.5734,
+              1.0,
+              1.1478
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngAltarA.glb",
+            "name": "DngAltarA",
+            "triangles": 5999,
+            "size": [
+              5.6192,
+              3.5714,
+              4.0992
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "stone ritual altar block, slate grey stone, carved runes glowing teal on the front, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "d4iowvla",
+          "submittedAt": "2026-11-04T13:04:12Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/d4iowvla.webp",
+          "finishedAt": "2026-11-04T13:04:42Z",
+          "file": "concepts/dng_altar_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "x3xmwjdl",
+          "submittedAt": "2026-11-04T13:04:43Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/x3xmwjdl.glb",
+          "finishedAt": "2026-11-04T13:06:36Z",
+          "file": "models/dng_altar_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_mushrooms_a",
+      "name": "Glowing Mushrooms",
+      "category": "organic",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "concept",
+      "subject": "cluster of three glowing mushrooms growing from one base, bone ivory stems, teal glowing caps",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_mushrooms_a.glb",
+            "name": "dng_mushrooms_a",
+            "triangles": 1200,
+            "size": [
+              0.394,
+              0.5,
+              0.2717
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Mushrooms_A.glb",
+            "name": "Dng_Mushrooms_A",
+            "triangles": 1200,
+            "size": [
+              0.394,
+              0.5,
+              0.2717
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Mushrooms_A.glb",
+            "name": "SM_Dng_Mushrooms_A",
+            "triangles": 1200,
+            "size": [
+              0.394,
+              0.5,
+              0.2717
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngMushroomsA.glb",
+            "name": "DngMushroomsA",
+            "triangles": 1200,
+            "size": [
+              1.4072,
+              1.7857,
+              0.9705
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "cluster of three glowing mushrooms growing from one base, bone ivory stems, teal glowing caps, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "jy2bdxnq",
+          "submittedAt": "2026-11-04T13:04:23Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/jy2bdxnq.webp",
+          "finishedAt": "2026-11-04T13:04:54Z",
+          "file": "concepts/dng_mushrooms_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "sxsd79va",
+          "submittedAt": "2026-11-04T13:04:56Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/sxsd79va.glb",
+          "finishedAt": "2026-11-04T13:07:08Z",
+          "file": "models/dng_mushrooms_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_boulder_a",
+      "name": "Boulder",
+      "category": "organic",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "medium boulder, slate grey stone, flat top, small patch of moss green on one side",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_boulder_a.glb",
+            "name": "dng_boulder_a",
+            "triangles": 3000,
+            "size": [
+              1.5633,
+              1.0,
+              1.6254
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Boulder_A.glb",
+            "name": "Dng_Boulder_A",
+            "triangles": 3000,
+            "size": [
+              1.5633,
+              1.0,
+              1.6254
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Boulder_A.glb",
+            "name": "SM_Dng_Boulder_A",
+            "triangles": 3000,
+            "size": [
+              1.5633,
+              1.0,
+              1.6254
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngBoulderA.glb",
+            "name": "DngBoulderA",
+            "triangles": 3000,
+            "size": [
+              5.583,
+              3.5714,
+              5.8048
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "medium boulder, slate grey stone, flat top, small patch of moss green on one side, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "a2p2yvve",
+          "submittedAt": "2026-11-04T13:14:52Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/a2p2yvve.webp",
+          "finishedAt": "2026-11-04T13:15:22Z",
+          "file": "concepts/dng_boulder_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "riknd45v",
+          "submittedAt": "2026-11-04T13:15:24Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/riknd45v.glb",
+          "finishedAt": "2026-11-04T13:17:46Z",
+          "file": "models/dng_boulder_a.glb"
+        }
+      },
+      "status": "done",
+      "rerolls": [
+        {
+          "reason": "text route came out as a flat green blob; rerouted to concept with a new subject line",
+          "previous": {
+            "model": "96t8v5pb"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dng_crystal_a",
+      "name": "Crystal Cluster",
+      "category": "organic",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "cluster of chunky glowing crystals growing from a rock base, teal crystals, slate grey rock",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_crystal_a.glb",
+            "name": "dng_crystal_a",
+            "triangles": 3000,
+            "size": [
+              0.5742,
+              0.8,
+              0.6099
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Crystal_A.glb",
+            "name": "Dng_Crystal_A",
+            "triangles": 3000,
+            "size": [
+              0.5742,
+              0.8,
+              0.6099
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Crystal_A.glb",
+            "name": "SM_Dng_Crystal_A",
+            "triangles": 3000,
+            "size": [
+              0.5742,
+              0.8,
+              0.6099
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCrystalA.glb",
+            "name": "DngCrystalA",
+            "triangles": 3000,
+            "size": [
+              2.0507,
+              2.8571,
+              2.1782
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "cluster of chunky glowing crystals growing from a rock base, teal crystals, slate grey rock, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "l9zy2lyu",
+          "submittedAt": "2026-11-04T13:06:19Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/l9zy2lyu.webp",
+          "finishedAt": "2026-11-04T13:06:49Z",
+          "file": "concepts/dng_crystal_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "rmfcl5sc",
+          "submittedAt": "2026-11-04T13:06:50Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/rmfcl5sc.glb",
+          "finishedAt": "2026-11-04T13:10:05Z",
+          "file": "models/dng_crystal_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_ribcage_a",
+      "name": "Ribcage",
+      "category": "organic",
+      "size": "small",
+      "heightM": 0.4,
+      "route": "concept",
+      "subject": "large creature ribcage lying on its side, bone ivory, chunky ribs",
+      "targetFaceCount": 1200,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_ribcage_a.glb",
+            "name": "dng_ribcage_a",
+            "triangles": 1196,
+            "size": [
+              0.362,
+              0.4,
+              0.6056
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Ribcage_A.glb",
+            "name": "Dng_Ribcage_A",
+            "triangles": 1196,
+            "size": [
+              0.362,
+              0.4,
+              0.6056
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Ribcage_A.glb",
+            "name": "SM_Dng_Ribcage_A",
+            "triangles": 1196,
+            "size": [
+              0.362,
+              0.4,
+              0.6056
+            ],
+            "pivot": "top-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngRibcageA.glb",
+            "name": "DngRibcageA",
+            "triangles": 1196,
+            "size": [
+              1.2927,
+              1.4286,
+              2.1628
+            ],
+            "pivot": "top-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "large creature ribcage lying on its side, bone ivory, chunky ribs, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "by4m2afr",
+          "submittedAt": "2026-11-04T13:06:37Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/by4m2afr.webp",
+          "finishedAt": "2026-11-04T13:07:08Z",
+          "file": "concepts/dng_ribcage_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 1200,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "nv6pii53",
+          "submittedAt": "2026-11-04T13:07:09Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/nv6pii53.glb",
+          "finishedAt": "2026-11-04T13:09:33Z",
+          "file": "models/dng_ribcage_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_cauldron_a",
+      "name": "Cauldron",
+      "category": "props",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "iron cauldron on three short legs, wrought iron near-black, bubbling glowing green liquid inside",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_cauldron_a.glb",
+            "name": "dng_cauldron_a",
+            "triangles": 3000,
+            "size": [
+              0.7072,
+              0.8,
+              0.727
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Cauldron_A.glb",
+            "name": "Dng_Cauldron_A",
+            "triangles": 3000,
+            "size": [
+              0.7072,
+              0.8,
+              0.727
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Cauldron_A.glb",
+            "name": "SM_Dng_Cauldron_A",
+            "triangles": 3000,
+            "size": [
+              0.7072,
+              0.8,
+              0.727
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngCauldronA.glb",
+            "name": "DngCauldronA",
+            "triangles": 3000,
+            "size": [
+              2.5258,
+              2.8571,
+              2.5966
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "iron cauldron on three short legs, wrought iron near-black, bubbling glowing green liquid inside, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "u5gl5809",
+          "submittedAt": "2026-11-04T13:07:10Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/u5gl5809.webp",
+          "finishedAt": "2026-11-04T13:07:40Z",
+          "file": "concepts/dng_cauldron_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "43ctrzqa",
+          "submittedAt": "2026-11-04T13:07:41Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/43ctrzqa.glb",
+          "finishedAt": "2026-11-04T13:10:55Z",
+          "file": "models/dng_cauldron_a.glb"
+        }
+      },
+      "status": "done"
+    },
+    {
+      "id": "dng_anvil_a",
+      "name": "Anvil",
+      "category": "props",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "blacksmith anvil sitting on a short wooden stump, wrought iron near-black anvil, warm oak brown stump",
+      "targetFaceCount": 3000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_anvil_a.glb",
+            "name": "dng_anvil_a",
+            "triangles": 2999,
+            "size": [
+              0.9231,
+              0.8,
+              0.6272
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Anvil_A.glb",
+            "name": "Dng_Anvil_A",
+            "triangles": 2999,
+            "size": [
+              0.9231,
+              0.8,
+              0.6272
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Anvil_A.glb",
+            "name": "SM_Dng_Anvil_A",
+            "triangles": 2999,
+            "size": [
+              0.9231,
+              0.8,
+              0.6272
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngAnvilA.glb",
+            "name": "DngAnvilA",
+            "triangles": 2999,
+            "size": [
+              3.2966,
+              2.8571,
+              2.2398
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "blacksmith anvil sitting on a short wooden stump, wrought iron near-black anvil, warm oak brown stump, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "lejghj5x",
+          "submittedAt": "2026-11-04T13:14:51Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/lejghj5x.webp",
+          "finishedAt": "2026-11-04T13:15:22Z",
+          "file": "concepts/dng_anvil_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 3000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "suj1rd70",
+          "submittedAt": "2026-11-04T13:15:23Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/suj1rd70.glb",
+          "finishedAt": "2026-11-04T13:17:25Z",
+          "file": "models/dng_anvil_a.glb",
+          "fix": {
+            "tool": "retexture_model",
+            "args": {
+              "jobId": "ofbzjhdy",
+              "prompt": "anvil in wrought iron near-black, the whole stump in warm oak brown wood with visible end grain on top, no blue, low-poly flat colors with subtle gradient, clean surfaces",
+              "textureResolution": "1k"
+            },
+            "jobId": "suj1rd70",
+            "url": "https://storage.googleapis.com/ai-services-quality/jobs/suj1rd70.glb",
+            "reason": "stray blue stripe on stump",
+            "replacedJobId": "ofbzjhdy"
+          }
+        }
+      },
+      "status": "done",
+      "rerolls": [
+        {
+          "reason": "text route was a bare anvil with no stump; rerouted to concept with a new subject line",
+          "previous": {
+            "model": "g9m4f88g"
+          }
+        },
+        {
+          "reason": "stray blue stripe on stump; fixed with retexture_model",
+          "previous": {
+            "model": "ofbzjhdy"
+          }
+        }
+      ]
+    },
+    {
+      "id": "dng_weapon_rack_a",
+      "name": "Weapon Rack",
+      "category": "props",
+      "size": "large",
+      "heightM": 1.6,
+      "route": "concept",
+      "subject": "wooden weapon rack holding two spears and a sword, warm oak brown frame, steel weapon heads",
+      "targetFaceCount": 6000,
+      "export": {
+        "godot": [
+          {
+            "file": "export/godot/dng_weapon_rack_a.glb",
+            "name": "dng_weapon_rack_a",
+            "triangles": 6000,
+            "size": [
+              1.0049,
+              1.6,
+              0.5955
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unity": [
+          {
+            "file": "export/unity/Dng_Weapon_Rack_A.glb",
+            "name": "Dng_Weapon_Rack_A",
+            "triangles": 6000,
+            "size": [
+              1.0049,
+              1.6,
+              0.5955
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "unreal": [
+          {
+            "file": "export/unreal/SM_Dng_Weapon_Rack_A.glb",
+            "name": "SM_Dng_Weapon_Rack_A",
+            "triangles": 6000,
+            "size": [
+              1.0049,
+              1.6,
+              0.5955
+            ],
+            "pivot": "bottom-center"
+          }
+        ],
+        "roblox": [
+          {
+            "file": "export/roblox/DngWeaponRackA.glb",
+            "name": "DngWeaponRackA",
+            "triangles": 6000,
+            "size": [
+              3.5888,
+              5.7143,
+              2.1268
+            ],
+            "pivot": "bottom-center"
+          }
+        ]
+      },
+      "jobs": {
+        "concept": {
+          "tool": "generate_image",
+          "args": {
+            "prompt": "wooden weapon rack holding two spears and a sword, warm oak brown frame, steel weapon heads, low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+            "aspectRatio": "1:1",
+            "genStyleId": "Polygonal"
+          },
+          "estimate": 10,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "vi347t58",
+          "submittedAt": "2026-11-04T13:07:29Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/vi347t58.webp",
+          "finishedAt": "2026-11-04T13:07:59Z",
+          "file": "concepts/dng_weapon_rack_a.webp"
+        },
+        "model": {
+          "tool": "generate_3d_from_image",
+          "args": {
+            "topology": "triangles",
+            "targetFaceCount": 6000,
+            "textureResolution": "1k",
+            "imageJobId": {
+              "$from": "concept"
+            }
+          },
+          "estimate": 20,
+          "status": "success",
+          "attempts": 1,
+          "jobId": "uyfvf8fg",
+          "submittedAt": "2026-11-04T13:08:01Z",
+          "error": null,
+          "url": "https://storage.googleapis.com/ai-services-quality/jobs/uyfvf8fg.glb",
+          "finishedAt": "2026-11-04T13:11:06Z",
+          "file": "models/dng_weapon_rack_a.glb"
+        }
+      },
+      "status": "done"
+    }
+  ],
+  "totals": {
+    "assets": 40,
+    "done": 40,
+    "failed": 0,
+    "creditsSpentEstimate": 1285,
+    "creditsRemainingEstimate": 0
+  },
+  "updatedAt": "2026-11-04T13:28:59Z",
+  "spend": {
+    "note": "Real balance change on the API key for this pack",
+    "startBalance": 2000,
+    "endBalance": 505,
+    "credits": 1495,
+    "breakdown": {
+      "styleTests (2 rounds x 3 images)": 60,
+      "pack (40 props, 5 variants, 1 split)": 1270,
+      "rerolls (4 assets, concept route)": 120,
+      "anvil texture fix": 15,
+      "frozen sword retry (rejected)": 15,
+      "frozen barrel variant": 15
+    }
+  }
+}

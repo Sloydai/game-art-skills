@@ -1,0 +1,416 @@
+{
+  "pack": "low-poly-dungeon",
+  "title": "Low-Poly Dungeon Props (40)",
+  "styleBible": "style-bible.md",
+  "maxConcurrent": 5,
+  "defaults": {
+    "route": "concept",
+    "genStyleId": "Polygonal",
+    "topology": "triangles",
+    "textureResolution": "1k",
+    "aspectRatio": "1:1",
+    "conceptSuffix": "low-poly faceted game prop, flat-shaded triangles, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, clean unworn surfaces, single object only, no extra props or decorations, no base, no pedestal, no ground, centered, full object in frame, three-quarter view from slightly above, plain light grey background, even soft lighting, no shadow, no text",
+    "modelSuffix": "low-poly faceted game prop, flat-shaded, chunky stylized proportions, slightly bevelled edges, only the colors named for this object, muted dungeon tones, flat colors with subtle gradient, single object, no base",
+    "retextureSuffix": "low-poly flat colors with subtle gradient, clean surfaces"
+  },
+  "budgets": {
+    "small": 1200,
+    "medium": 3000,
+    "large": 6000,
+    "hero": 10000
+  },
+  "assets": [
+    {
+      "id": "dng_barrel_a",
+      "name": "Wooden Barrel",
+      "category": "containers",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "text",
+      "subject": "wooden barrel, warm oak brown staves with wrought iron bands",
+      "split": {
+        "method": "partition",
+        "numberOfParts": 6
+      },
+      "variants": [
+        {
+          "name": "frozen",
+          "prompt": "surfaces coated in pale blue frost, thick white ice crust on the top rim and upper edges of the staves, frosted iron bands, cold desaturated blue-grey oak"
+        }
+      ]
+    },
+    {
+      "id": "dng_crate_a",
+      "name": "Wooden Crate",
+      "category": "containers",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "text",
+      "subject": "wooden crate, warm oak brown planks with iron corner brackets"
+    },
+    {
+      "id": "dng_chest_a",
+      "name": "Treasure Chest",
+      "category": "containers",
+      "size": "hero",
+      "heightM": 0.7,
+      "route": "concept",
+      "subject": "treasure chest, warm oak brown planks with wrought iron bands, domed lid with a skull-shaped lock",
+      "variants": [
+        {
+          "name": "gold",
+          "prompt": "polished gold metal replacing all iron bands and the lock, warm yellow highlights on the edges, oak stained deep red-brown, small ruby inlay on the lock"
+        },
+        {
+          "name": "rusty",
+          "prompt": "wrought iron bands heavily oxidized, orange-brown rust collecting in crevices and along edges, oak planks darker and water-stained"
+        }
+      ]
+    },
+    {
+      "id": "dng_urn_a",
+      "name": "Clay Urn",
+      "category": "containers",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "tall clay urn, terracotta with a bone ivory painted band, two small handles"
+    },
+    {
+      "id": "dng_coffin_a",
+      "name": "Stone Coffin",
+      "category": "containers",
+      "size": "large",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "stone sarcophagus lying flat, slate grey stone, carved skull on the lid"
+    },
+    {
+      "id": "dng_table_a",
+      "name": "Heavy Table",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "heavy wooden table, warm oak brown, thick square legs, one corner chipped"
+    },
+    {
+      "id": "dng_chair_a",
+      "name": "Wooden Chair",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "simple wooden chair, warm oak brown, thick legs, straight slatted back"
+    },
+    {
+      "id": "dng_bench_a",
+      "name": "Wooden Bench",
+      "category": "furniture",
+      "size": "medium",
+      "heightM": 0.5,
+      "route": "text",
+      "subject": "long wooden bench, warm oak brown, thick plank seat on two block legs"
+    },
+    {
+      "id": "dng_bookshelf_a",
+      "name": "Bookshelf",
+      "category": "furniture",
+      "size": "large",
+      "heightM": 2.0,
+      "route": "concept",
+      "subject": "tall wooden bookshelf, warm oak brown, three shelves of chunky books in muted red, green and ivory"
+    },
+    {
+      "id": "dng_stool_a",
+      "name": "Stool",
+      "category": "furniture",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "text",
+      "subject": "three-legged wooden stool, warm oak brown, round seat"
+    },
+    {
+      "id": "dng_throne_a",
+      "name": "Bone Throne",
+      "category": "furniture",
+      "size": "hero",
+      "heightM": 2.0,
+      "route": "concept",
+      "subject": "stone throne, slate grey stone with bone ivory skulls on the armrests, tall pointed back"
+    },
+    {
+      "id": "dng_wall_torch_a",
+      "name": "Wall Torch",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "iron wall sconce holding a torch, wrought iron near-black, flame as a solid stylized torch amber shape"
+    },
+    {
+      "id": "dng_brazier_a",
+      "name": "Brazier",
+      "category": "lighting",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "iron brazier bowl on three legs, wrought iron near-black, solid stylized torch amber flames rising from coals"
+    },
+    {
+      "id": "dng_candelabra_a",
+      "name": "Candelabra",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.7,
+      "route": "concept",
+      "subject": "standing iron candelabra with three thick candles, wrought iron near-black, bone ivory wax, solid amber flames"
+    },
+    {
+      "id": "dng_lantern_a",
+      "name": "Hanging Lantern",
+      "category": "lighting",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "concept",
+      "subject": "hanging iron lantern with a ring on top, wrought iron near-black frame, glowing torch amber panels"
+    },
+    {
+      "id": "dng_potion_a",
+      "name": "Health Potion",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "concept",
+      "subject": "round potion bottle with a cork, opaque glass filled with glowing crimson red liquid, small rope tied at the neck",
+      "variants": [
+        {
+          "name": "mana",
+          "prompt": "same bottle, opaque glass filled with glowing royal blue liquid, cork and rope unchanged"
+        }
+      ]
+    },
+    {
+      "id": "dng_coins_a",
+      "name": "Coin Stack",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.2,
+      "route": "concept",
+      "subject": "short neat stack of six thin flat gold coins, polished gold, stamped crown on the top coin"
+    },
+    {
+      "id": "dng_key_a",
+      "name": "Dungeon Key",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "concept",
+      "subject": "large ornate dungeon key, wrought iron near-black with a ring-shaped bow, chunky teeth"
+    },
+    {
+      "id": "dng_scroll_a",
+      "name": "Scroll",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "text",
+      "subject": "rolled parchment scroll, bone ivory paper, red wax seal, tied with a cord"
+    },
+    {
+      "id": "dng_skull_a",
+      "name": "Skull",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "text",
+      "subject": "human skull, bone ivory, slightly cracked forehead"
+    },
+    {
+      "id": "dng_sword_a",
+      "name": "Short Sword",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.9,
+      "route": "concept",
+      "subject": "short sword standing upright, worn steel blade, warm oak brown leather-wrapped grip, round iron pommel"
+    },
+    {
+      "id": "dng_shield_a",
+      "name": "Round Shield",
+      "category": "loot",
+      "size": "medium",
+      "heightM": 0.9,
+      "route": "concept",
+      "subject": "round wooden shield standing upright, warm oak brown planks, wrought iron rim and central boss"
+    },
+    {
+      "id": "dng_axe_a",
+      "name": "Battle Axe",
+      "category": "loot",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "single-bladed battle axe standing upright, worn steel head, warm oak brown handle with iron wraps"
+    },
+    {
+      "id": "dng_spellbook_a",
+      "name": "Spellbook",
+      "category": "loot",
+      "size": "small",
+      "heightM": 0.3,
+      "route": "concept",
+      "subject": "closed thick spellbook, dark green leather cover, gold corner caps, glowing teal rune on the cover"
+    },
+    {
+      "id": "dng_spike_trap_a",
+      "name": "Spike Trap",
+      "category": "hazards",
+      "size": "medium",
+      "heightM": 0.4,
+      "route": "concept",
+      "subject": "square floor spike trap, slate grey stone tile with chunky iron spikes raised"
+    },
+    {
+      "id": "dng_bear_trap_a",
+      "name": "Bear Trap",
+      "category": "hazards",
+      "size": "small",
+      "heightM": 0.25,
+      "route": "concept",
+      "subject": "open iron bear trap, wrought iron near-black with chunky jagged jaws, lying flat"
+    },
+    {
+      "id": "dng_lever_a",
+      "name": "Wall Lever",
+      "category": "hazards",
+      "size": "small",
+      "heightM": 0.6,
+      "route": "concept",
+      "subject": "dungeon wall lever on a stone plate, slate grey stone plate, wrought iron lever with a torch amber handle grip"
+    },
+    {
+      "id": "dng_pillar_a",
+      "name": "Stone Pillar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 3.0,
+      "route": "concept",
+      "subject": "square stone pillar, slate grey blocks, moss green in the joints, wide base and capital"
+    },
+    {
+      "id": "dng_pillar_broken_a",
+      "name": "Broken Pillar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 1.6,
+      "route": "concept",
+      "subject": "broken stone pillar, slate grey blocks, jagged snapped top, moss green in the joints"
+    },
+    {
+      "id": "dng_archway_a",
+      "name": "Stone Archway",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 3.5,
+      "route": "concept",
+      "subject": "freestanding stone archway, slate grey blocks with a keystone, moss green in the joints"
+    },
+    {
+      "id": "dng_door_a",
+      "name": "Dungeon Door",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 2.4,
+      "route": "concept",
+      "subject": "arched wooden dungeon door in a stone frame, warm oak brown planks, wrought iron hinges and ring handle, slate grey stone frame",
+      "variants": [
+        {
+          "name": "mossy",
+          "prompt": "green moss patches on the stone frame and bottom of the door, damp darker oak, iron hinges with green patina"
+        }
+      ]
+    },
+    {
+      "id": "dng_gargoyle_a",
+      "name": "Gargoyle Statue",
+      "category": "architecture",
+      "size": "hero",
+      "heightM": 1.5,
+      "route": "concept",
+      "subject": "crouching gargoyle statue on a square plinth, slate grey stone, wings folded, horns"
+    },
+    {
+      "id": "dng_altar_a",
+      "name": "Ritual Altar",
+      "category": "architecture",
+      "size": "large",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "stone ritual altar block, slate grey stone, carved runes glowing teal on the front"
+    },
+    {
+      "id": "dng_mushrooms_a",
+      "name": "Glowing Mushrooms",
+      "category": "organic",
+      "size": "small",
+      "heightM": 0.5,
+      "route": "concept",
+      "subject": "cluster of three glowing mushrooms growing from one base, bone ivory stems, teal glowing caps"
+    },
+    {
+      "id": "dng_boulder_a",
+      "name": "Boulder",
+      "category": "organic",
+      "size": "medium",
+      "heightM": 1.0,
+      "route": "concept",
+      "subject": "medium boulder, slate grey stone, flat top, small patch of moss green on one side"
+    },
+    {
+      "id": "dng_crystal_a",
+      "name": "Crystal Cluster",
+      "category": "organic",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "cluster of chunky glowing crystals growing from a rock base, teal crystals, slate grey rock"
+    },
+    {
+      "id": "dng_ribcage_a",
+      "name": "Ribcage",
+      "category": "organic",
+      "size": "small",
+      "heightM": 0.4,
+      "route": "concept",
+      "subject": "large creature ribcage lying on its side, bone ivory, chunky ribs"
+    },
+    {
+      "id": "dng_cauldron_a",
+      "name": "Cauldron",
+      "category": "props",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "iron cauldron on three short legs, wrought iron near-black, bubbling glowing green liquid inside"
+    },
+    {
+      "id": "dng_anvil_a",
+      "name": "Anvil",
+      "category": "props",
+      "size": "medium",
+      "heightM": 0.8,
+      "route": "concept",
+      "subject": "blacksmith anvil sitting on a short wooden stump, wrought iron near-black anvil, warm oak brown stump"
+    },
+    {
+      "id": "dng_weapon_rack_a",
+      "name": "Weapon Rack",
+      "category": "props",
+      "size": "large",
+      "heightM": 1.6,
+      "route": "concept",
+      "subject": "wooden weapon rack holding two spears and a sword, warm oak brown frame, steel weapon heads"
+    }
+  ]
+}
