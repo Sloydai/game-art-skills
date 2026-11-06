@@ -5,6 +5,8 @@ description: Use when Sloyd GLBs (single models or a pack manifest.json) need to
 
 # Engine Export: from GLB to placed, collidable, correctly sized asset
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 Generated models arrive with arbitrary scale and an origin wherever the generator put it. A barrel
 that imports at 40 meters tall, or with its pivot at the center so it sinks half into the floor,
 costs the developer more time than generating it did. This skill makes every asset land in the
@@ -16,7 +18,7 @@ heights. Everything here is local file work and costs no credits.
 ## 1. Check before converting
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py inspect art/<pack>/models/*.glb
+python3 <skills>/engine-export/scripts/glb_tool.py inspect art/<pack>/models/*.glb
 ```
 
 This reports triangles, per-mesh maximum, bounds in meters, texture sizes and required extensions.
@@ -27,10 +29,10 @@ a look before you scale it.
 ## 2. Export for the engine
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine godot --godot-collision convcol
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine unity
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine unreal
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine roblox
+python3 <skills>/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine godot --godot-collision convcol
+python3 <skills>/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine unity
+python3 <skills>/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine unreal
+python3 <skills>/engine-export/scripts/glb_tool.py export art/<pack>/manifest.json --engine roblox
 ```
 
 For every model, variant and split result, the export:
@@ -65,7 +67,7 @@ fine for placement.
 Single file:
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py normalize in.glb out.glb --height 1.0 --pivot bottom-center --name Barrel_A
+python3 <skills>/engine-export/scripts/glb_tool.py normalize in.glb out.glb --height 1.0 --pivot bottom-center --name Barrel_A
 ```
 
 Use `--node-suffix=-convcol` (with `=`) for Godot hints.
@@ -80,7 +82,7 @@ materials, collision, LODs and the pitfalls specific to that engine.
 - Godot: [references/godot.md](references/godot.md). Native GLB; import-hint suffixes for
   collision; auto LOD; the Sloyd Godot Bridge.
 - Unreal: [references/unreal.md](references/unreal.md). glTF importer (meters to cm); SM_
-  naming; collision; LODs vs Nanite; `${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/unreal_import.py` batch import.
+  naming; collision; LODs vs Nanite; `<skills>/engine-export/scripts/unreal_import.py` batch import.
 - Roblox: [references/roblox.md](references/roblox.md). 3D Importer; studs; 20k triangles per
   mesh; 1024 px textures; CollisionFidelity.
 
@@ -102,8 +104,8 @@ With the [Sloyd Godot Bridge](https://github.com/Sloydai/sloyd-godot-bridge) ena
 project:
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/send_to_godot.py --ping
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/send_to_godot.py --manifest art/<pack>/manifest.json --only dng_chest_a,dng_barrel_a
+python3 <skills>/engine-export/scripts/send_to_godot.py --ping
+python3 <skills>/engine-export/scripts/send_to_godot.py --manifest art/<pack>/manifest.json --only dng_chest_a,dng_barrel_a
 ```
 
 The bridge downloads each GLB and adds it to the edited scene. This is good for judging scale and

@@ -5,6 +5,8 @@ description: Use when a 3D model should become separate pieces for a game. Examp
 
 # Kitbasher: one model, many usable pieces
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 `split_model_into_parts` (40 credits, about 2.5 to 4 minutes) returns a new model whose parts
 are separate meshes. The method decides what those parts are good for. Choose by the game need,
 not by the model.
@@ -50,7 +52,7 @@ The split GLB holds every part as its own mesh in its assembled position. Normal
 parts share the asset's real size, then cut it into files:
 
 ```bash
-S="${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts"
+S="<skills>/engine-export/scripts"
 python3 $S/glb_tool.py normalize parts/dng_barrel_a__parts.glb tmp/barrel_parts.glb --height 1.0 --name Barrel_A
 python3 $S/glb_tool.py split tmp/barrel_parts.glb export/kit/barrel_a --prefix Barrel_A             # assembled
 python3 $S/glb_tool.py split tmp/barrel_parts.glb export/kit/barrel_a_lib --prefix Barrel_A --recenter  # library

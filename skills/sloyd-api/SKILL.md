@@ -5,6 +5,8 @@ description: Use first, before any other Game Art Department skill calls Sloyd, 
 
 # Sloyd API: connection, credits and the job loop
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 Every role in the Game Art Department (art-director, concept-artist, modeler, look-dev,
 asset-pack-builder, kitbasher, engine-export) spends real credits through this API. This skill
 is the shared contract: how to connect, how to price a request before running it, how to run a
@@ -51,21 +53,20 @@ claude mcp add --transport http sloyd https://api.sloyd.ai/api/mcp \
 Other clients (Cursor, VS Code, Claude Desktop via `mcp-remote`, Messages API, Responses API):
 see [references/clients.md](references/clients.md).
 
-**No MCP? Use the bundled client or curl.** `${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py` calls the same MCP tools over
+**No MCP? Use the bundled client or curl.** `<skills>/sloyd-api/scripts/sloyd.py` calls the same MCP tools over
 plain HTTPS with the standard library only. It works in any agent that can run a shell.
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py check                                   # credentials + balance
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py styles                                  # genStyleId list
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py run generate_3d_from_text '{"prompt":"wooden barrel"}'
+python3 <skills>/sloyd-api/scripts/sloyd.py check                                   # credentials + balance
+python3 <skills>/sloyd-api/scripts/sloyd.py styles                                  # genStyleId list
+python3 <skills>/sloyd-api/scripts/sloyd.py run generate_3d_from_text '{"prompt":"wooden barrel"}'
 ```
 
 The REST equivalents with curl are in [references/rest-fallback.md](references/rest-fallback.md).
 
-**Script paths.** Commands in these skills use `${CLAUDE_PLUGIN_ROOT}/skills/...`. Claude Code
-replaces that with the plugin's install folder. In other agents, replace it with the folder this
-repository was cloned or installed into. All scripts are Python 3.9+ with the standard library
-only. Run them from the user's project folder, because outputs go to paths you pass in.
+**Script paths.** Commands use `<skills>/...`, the folder the skills are installed in. All scripts
+are Python 3.9+ with the standard library only. Run them from the user's project folder, because
+outputs go to paths you pass in.
 
 ## 3. Tools (the complete list)
 
@@ -99,7 +100,7 @@ you want textures.
 Before any paid call or batch:
 
 1. Call `get_credit_balance`.
-2. Price the whole plan with the table above (or `python3 ${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py call ...` which prints
+2. Price the whole plan with the table above (or `python3 <skills>/sloyd-api/scripts/sloyd.py call ...` which prints
    the estimate). Include rerolls: budget about 15% extra for a pack.
 3. Tell the user the total, the balance, and what is left after the run, in one line, for example
    `This pack costs about 1,090 credits (~$14.50). Balance: 1,500. Remaining after: ~410.`
