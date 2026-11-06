@@ -5,10 +5,10 @@
 ![40 low-poly dungeon props made by the Game Art Department skills](examples/low-poly-dungeon/images/contact-sheet.png)
 
 ```sh
-npx skills add Sloydai/game-art-skills
+npx skills add Sloydai/game-art-skills --all
 ```
 
-Works with Claude Code, Codex, Cursor, opencode, Kiro, and GitHub Copilot. You need your own [Sloyd API key](#2-add-your-sloyd-api-key). See [Install](#install) for manual setup.
+Works with Claude Code, Codex, Cursor, opencode, Kiro, and GitHub Copilot. You need your own Sloyd API key. [Step-by-step install](#install) takes about 5 minutes.
 
 Made by [Sloyd](https://sloyd.ai). If it saves you a week of modelling, give it a star.
 
@@ -49,24 +49,120 @@ We asked for 40 props for a low-poly dungeon crawler. [See the pack.](examples/l
 
 ## Install
 
-### 1. Add the skills
+Takes about 5 minutes. Do the steps in order.
 
-With the [`skills` CLI](https://github.com/vercel-labs/skills), in your game project:
+### Before you start
+
+You need these four things. Check each one in a terminal.
+
+| You need | Check it with | If it's missing |
+|---|---|---|
+| A coding agent, for example [Claude Code](https://docs.claude.com/en/docs/claude-code) | `claude --version` | Install it from the link |
+| Node.js 18 or newer | `node --version` | Download the LTS version from [nodejs.org](https://nodejs.org) |
+| Python 3.9 or newer | Mac/Linux: `python3 --version`<br>Windows: `python --version` | Download from [python.org](https://www.python.org/downloads/). On Windows, tick **Add python.exe to PATH** in the installer |
+| A Sloyd account | | Sign up free at [sloyd.ai](https://www.sloyd.ai) |
+
+### Step 1. Open a terminal in your game project folder
+
+Every command below runs in this folder, for example:
 
 ```sh
-npx skills add Sloydai/game-art-skills
+cd ~/projects/my-game
 ```
 
-Or as a Claude Code plugin, which also connects the Sloyd MCP server for you:
+On Windows: `cd C:\Users\you\projects\my-game`
+
+### Step 2. Install the skills
 
 ```sh
-claude plugin marketplace add Sloydai/game-art-skills
-claude plugin install game-art@sloyd-game-art
+npx skills add Sloydai/game-art-skills --all
 ```
 
-Or copy the folders in [`skills/`](skills/) into your agent's skills directory. Keep all 9 together, because they call each other's scripts.
+If it asks `Ok to proceed?`, type `y` and press Enter.
 
-| Agent | Project-level | User-level |
+✅ You should see **Done!** at the end, and a new `.agents/skills` folder in your project.
+
+### Step 3. Get your Sloyd API key
+
+1. Go to [api-dashboard.sloyd.ai](https://api-dashboard.sloyd.ai) and sign in.
+2. Open **API Keys** and click **Generate Key**.
+3. Keep that page open. You'll copy the **Client ID** and the **Client Secret** in the next step. The secret is only shown once.
+4. Open **Usage & Billing** and buy credits. The minimum is $12 for 900 credits, enough for a pack of about 25 props.
+
+### Step 4. Save your key
+
+Mac/Linux:
+
+```sh
+python3 .agents/skills/sloyd-api/scripts/sloyd.py setup
+```
+
+Windows:
+
+```powershell
+python .agents\skills\sloyd-api\scripts\sloyd.py setup
+```
+
+It asks two questions:
+
+1. **Client ID:** paste it and press Enter.
+2. **Client Secret:** paste it and press Enter. Nothing appears on screen while you paste. That's normal.
+
+✅ You should see **Done. Your key works** and your credit balance.
+
+The key is saved in a `.env` file in your project, and `.env` is added to `.gitignore` so it never gets committed. Never paste the secret into the chat with your agent.
+
+### Step 5. Start your agent in the same folder
+
+```sh
+claude
+```
+
+If your agent was already open, close it and start it again. Skills only load when the agent starts.
+
+### Step 6. Ask for your pack
+
+Type this into your agent, changing the game, count and engine to yours:
+
+> Use game-art-director to make 20 props for my low-poly dungeon game in Godot.
+
+The agent shows you a 3-prop style test and the cost, and **waits for your OK before it spends any credits.** Then it builds the pack. That takes about 30 minutes for 40 props.
+
+## If something goes wrong
+
+| What you see | What to do |
+|---|---|
+| `npx: command not found` or `node: command not found` | Install Node.js (see [Before you start](#before-you-start)), then close and reopen the terminal |
+| Windows: `npx.ps1 cannot be loaded because running scripts is disabled` | Use `npx.cmd skills add Sloydai/game-art-skills --all` instead |
+| `python3: command not found` (Mac/Linux) | Install Python from [python.org](https://www.python.org/downloads/), then reopen the terminal |
+| Windows: `python` opens the Microsoft Store | Install Python from [python.org](https://www.python.org/downloads/) and tick **Add python.exe to PATH** |
+| `can't open file ... sloyd.py` | You're in the wrong folder. `cd` into your game project (Step 1), the one with `.agents` inside |
+| `Sloyd rejected this key` | Copy the ID and secret again from the API Keys page and rerun Step 4. If you lost the secret, generate a new key |
+| `You have 0 credits` or `402 insufficient credits` | Buy credits under **Usage & Billing** on [api-dashboard.sloyd.ai](https://api-dashboard.sloyd.ai) |
+| The agent doesn't know `game-art-director` | Restart the agent from your project folder (Step 5) |
+
+<details>
+<summary><b>Other ways to install</b></summary>
+
+**As a Claude Code plugin.** This also connects the Sloyd MCP server. In Claude Code:
+
+```
+/plugin marketplace add Sloydai/game-art-skills
+/plugin install game-art@sloyd-game-art
+```
+
+The plugin reads your key from environment variables, so set them in the terminal before you start `claude`:
+
+```sh
+export SLOYD_CLIENT_ID="sok_live_..."
+export SLOYD_CLIENT_SECRET="..."
+```
+
+On Windows PowerShell: `$env:SLOYD_CLIENT_ID="sok_live_..."` and `$env:SLOYD_CLIENT_SECRET="..."`. These only last until you close the terminal.
+
+**By copying the folders.** Copy all 9 folders in [`skills/`](skills/) into your agent's skills folder, and keep them together because they call each other's scripts.
+
+| Agent | Project folder | User folder |
 | --- | --- | --- |
 | Claude Code | `.claude/skills/` | `~/.claude/skills/` |
 | Codex | `.agents/skills/` | `~/.agents/skills/` |
@@ -74,52 +170,13 @@ Or copy the folders in [`skills/`](skills/) into your agent's skills directory. 
 | Kiro | `.kiro/skills/` | `~/.kiro/skills/` |
 | GitHub Copilot | `.github/skills/` | |
 
-For example, for Claude Code in the current project:
+Then save your key from the same folder: `python3 <skills folder>/sloyd-api/scripts/sloyd.py setup`.
 
-```sh
-git clone --depth 1 https://github.com/Sloydai/game-art-skills.git /tmp/game-art-skills
-mkdir -p .claude/skills
-cp -r /tmp/game-art-skills/skills/* .claude/skills/
-```
+**Connect the Sloyd MCP server (optional).** The skills work without it. Configs for Claude Code, Cursor, VS Code and other clients are in [`skills/sloyd-api/references/clients.md`](skills/sloyd-api/references/clients.md).
 
-### 2. Add your Sloyd API key
+</details>
 
-Each person uses their own key, and generations are billed to their own credits.
-
-1. Sign in at [api-dashboard.sloyd.ai](https://api-dashboard.sloyd.ai), open **API Keys** and click **Generate Key**. Copy the secret; it is shown once.
-2. Buy credits under **Usage & Billing**. The minimum is $12 for 900 credits.
-3. Set the key in the terminal you start your agent from:
-
-   ```sh
-   export SLOYD_CLIENT_ID="sok_live_..."
-   export SLOYD_CLIENT_SECRET="..."
-   ```
-
-   On Windows PowerShell: `$env:SLOYD_CLIENT_ID="sok_live_..."` and `$env:SLOYD_CLIENT_SECRET="..."`.
-
-   Or put both lines in a `.env` file in your project (copy [`.env.example`](.env.example)) and make sure `.env` is in your `.gitignore`.
-
-Never paste the secret into chat or commit it.
-
-### 3. Optional: connect the Sloyd MCP server
-
-The skills work without it: they call Sloyd through a bundled Python script (Python 3.9+, no packages needed). If your agent supports MCP, connecting the server lets it call Sloyd tools directly. In Claude Code:
-
-```sh
-claude mcp add --transport http sloyd https://api.sloyd.ai/api/mcp \
-  --header "x-client-id: $SLOYD_CLIENT_ID" \
-  --header "x-client-secret: $SLOYD_CLIENT_SECRET"
-```
-
-Configs for Cursor, VS Code and other clients are in [`skills/sloyd-api/references/clients.md`](skills/sloyd-api/references/clients.md).
-
-## Usage
-
-Describe your game to your agent:
-
-> Use game-art-director to make 40 props for my low-poly dungeon crawler in Godot. Isometric camera, budget 1,500 credits.
-
-The agent checks your key and balance, shows you the style test and the cost, and waits for your yes before building the pack. You get a folder like this:
+## What you get
 
 ```
 art/low-poly-dungeon/

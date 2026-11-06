@@ -10,6 +10,7 @@ Credentials come from the environment (or a .env file in the current folder):
     SLOYD_CLIENT_SECRET  shown once when you create the key
 
 CLI:
+    python3 sloyd.py setup                      ask for the key, test it, save to .env
     python3 sloyd.py check                      credentials + balance
     python3 sloyd.py balance
     python3 sloyd.py styles
@@ -257,11 +258,63 @@ def job_ok(job: dict) -> bool:
     return job.get("status") in ("success", "completed")
 
 
+def setup() -> int:
+    """Ask for the key, test it, save it to .env here, and keep .env out of git."""
+    import getpass
+    print("Sloyd API key setup")
+    print(f"Get your key at {DASHBOARD} > API Keys > Generate Key.\n")
+    cid = input("Paste your Client ID (starts with sok_) and press Enter: ").strip().strip('"\'')
+    print("Paste your Client Secret and press Enter.")
+    print("(Nothing will appear while you paste. That is normal.)")
+    sec = getpass.getpass("Client Secret: ").strip().strip('"\'')
+    if not cid.startswith("sok_"):
+        print("\nThat Client ID does not start with sok_. Copy it again from the API Keys page and rerun setup.")
+        return 1
+    if not sec:
+        print("\nNo secret was entered. Rerun setup and paste the secret.")
+        return 1
+    os.environ["SLOYD_CLIENT_ID"], os.environ["SLOYD_CLIENT_SECRET"] = cid, sec
+    try:
+        bal = Sloyd().balance()
+    except AuthError:
+        print("\nSloyd rejected this key. Check you copied the whole ID and secret, then rerun setup.")
+        return 1
+    except SloydError as err:
+        print(f"\nCould not reach Sloyd: {err}. Check your internet connection and rerun setup.")
+        return 1
+    lines = []
+    if os.path.isfile(".env"):
+        with open(".env", encoding="utf-8") as fh:
+            lines = [l.rstrip("\n") for l in fh if not l.startswith(("SLOYD_CLIENT_ID=", "SLOYD_CLIENT_SECRET="))]
+    lines += [f"SLOYD_CLIENT_ID={cid}", f"SLOYD_CLIENT_SECRET={sec}"]
+    with open(".env", "w", encoding="utf-8") as fh:
+        fh.write("\n".join(lines) + "\n")
+    ignored = False
+    if os.path.isfile(".gitignore"):
+        with open(".gitignore", encoding="utf-8") as fh:
+            ignored = any(l.strip() in (".env", "/.env", ".env*") for l in fh)
+    if not ignored:
+        with open(".gitignore", "a", encoding="utf-8") as fh:
+            fh.write("\n# Sloyd API key (never commit)\n.env\n")
+    print(f"\nDone. Your key works and is saved in {os.path.abspath('.env')}")
+    print(".env is in .gitignore, so it will not be committed.")
+    print(f"Credit balance: {bal}")
+    if bal == 0:
+        print(f"You have 0 credits. Buy some at {DASHBOARD} > Usage & Billing before making models.")
+    return 0
+
+
 def _main(argv: list[str]) -> int:
     if len(argv) < 2:
         print(__doc__)
         return 1
     cmd = argv[1]
+    if cmd == "setup":
+        try:
+            return setup()
+        except (KeyboardInterrupt, EOFError):
+            print("\nSetup cancelled.")
+            return 1
     try:
         if cmd == "download":
             print(download(argv[2], argv[3]))
