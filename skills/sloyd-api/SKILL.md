@@ -19,24 +19,31 @@ parameter that is not listed here or returned by `tools/list`.
 Each user creates their own key. Generations are billed to that user's prepaid credits.
 
 1. Sign in at https://api-dashboard.sloyd.ai, open **API Keys**, click **Generate Key**.
-2. Copy the client secret immediately. It is shown once and cannot be retrieved later.
-3. Buy credits under **Usage & Billing** (minimum $12 = 900 credits). A key with 0 credits
+   Copy the Client ID and the Client Secret. The secret is shown once.
+2. Buy credits under **Usage & Billing** (minimum $12 = 900 credits). A key with 0 credits
    authenticates but every paid call returns 402.
-4. Export the pair in the shell that launches the agent:
+3. In a terminal in the game project folder, the user runs:
 
-```bash
-export SLOYD_CLIENT_ID="sok_live_..."
-export SLOYD_CLIENT_SECRET="..."
-```
+   ```bash
+   python3 <skills>/sloyd-api/scripts/sloyd.py setup
+   ```
+
+   (`python` instead of `python3` on Windows.) It asks for the ID and secret, tests them,
+   saves them to `.env` in the project and adds `.env` to `.gitignore`.
+
+Environment variables `SLOYD_CLIENT_ID` / `SLOYD_CLIENT_SECRET` also work and win over `.env`.
 
 Rules for the agent:
 
-- Read credentials only from `SLOYD_CLIENT_ID` and `SLOYD_CLIENT_SECRET` (or a git-ignored
-  `.env` in the project). Never ask the user to paste a secret into chat, never write it into
-  a tracked file, a manifest, a log or a commit, and never echo it back.
-- If either variable is missing, stop and give the user the four steps above. Do not try to
-  generate anything without them.
-- To check without printing anything secret: `[ -n "$SLOYD_CLIENT_ID" ] && echo set`.
+- **Check the key with `python3 <skills>/sloyd-api/scripts/sloyd.py check`**, run from the
+  project folder. It reads the environment and `.env` and prints only `credentials: ok` and
+  the balance. Do not check the environment variables alone: a key saved by `setup` lives in
+  `.env`.
+- If `check` fails, stop. Tell the user to run the `setup` command above **themselves, in their
+  own terminal** (it asks for the secret with hidden input), then try again. Do not try to
+  generate anything without a working key.
+- Never ask the user to paste a secret into chat, never read `.env` aloud, never write the key
+  into a tracked file, a manifest, a log or a commit, and never echo it back.
 
 ## 2. Connect
 

@@ -30,9 +30,11 @@ art/<pack>/
 
 ## Stage 0: Preflight (sloyd-api)
 
-- Check that `SLOYD_CLIENT_ID` and `SLOYD_CLIENT_SECRET` are set, without printing them. If
-  either is missing, give the user the key setup steps from sloyd-api and stop.
-- Call `get_credit_balance`. If it is 0, say so now, before any planning effort is wasted.
+- Run `python3 <skills>/sloyd-api/scripts/sloyd.py check` from the project folder. It confirms
+  the key (from the environment or `.env`) and prints the balance without showing the key. If
+  it fails, tell the user to run `python3 <skills>/sloyd-api/scripts/sloyd.py setup` in their own
+  terminal (sloyd-api section 1) and stop.
+- If the balance is 0, say so now, before any planning effort is wasted.
 - Pick transport: Sloyd MCP tools if connected, otherwise `<skills>/sloyd-api/scripts/sloyd.py`.
 
 ## Stage 1: Brief
