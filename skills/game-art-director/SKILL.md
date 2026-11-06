@@ -5,6 +5,8 @@ description: Use when the user asks for game art end to end in one request. Exam
 
 # Game Art Director: one prompt to a finished pack
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 You run a small art department: art-director, concept-artist, modeler, look-dev,
 asset-pack-builder, kitbasher, engine-export, with sloyd-api as shared plumbing. Your job is
 sequencing, gates and budget. Each role's skill holds the craft. Load it when its stage starts
@@ -31,7 +33,7 @@ art/<pack>/
 - Check that `SLOYD_CLIENT_ID` and `SLOYD_CLIENT_SECRET` are set, without printing them. If
   either is missing, give the user the key setup steps from sloyd-api and stop.
 - Call `get_credit_balance`. If it is 0, say so now, before any planning effort is wasted.
-- Pick transport: Sloyd MCP tools if connected, otherwise `${CLAUDE_PLUGIN_ROOT}/skills/sloyd-api/scripts/sloyd.py`.
+- Pick transport: Sloyd MCP tools if connected, otherwise `<skills>/sloyd-api/scripts/sloyd.py`.
 
 ## Stage 1: Brief
 
@@ -62,7 +64,7 @@ the batch on an untested bible. A bad bible multiplies across every asset.
 
 Plan the asset list by level-design coverage (structure, furniture, containers and loot, light,
 hazards, clutter and organic), with the size mix, routes, heights, and variants planned as
-retextures. Write `plan.json`. Run `python3 ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --estimate`. Show:
+retextures. Write `plan.json`. Run `python3 <skills>/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --estimate`. Show:
 
 - the list grouped by category, one line each
 - total credits, dollars, reroll reserve, current balance, and balance after the run

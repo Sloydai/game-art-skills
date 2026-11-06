@@ -1,141 +1,162 @@
 # Game Art Department
 
-A full 3D art department for your coding agent. Describe your game once and get a consistent,
-engine-ready asset pack: a locked style bible, concept sheets, GLB models, material variants,
-destructible and modular pieces, and import-ready files for Unity, Godot, Unreal or Roblox.
-
-Built for indie game devs. Powered by the [Sloyd API](https://www.sloyd.ai/api).
+[Agent Skills](https://agentskills.io) that give your coding agent a full 3D art department. Describe your game and get a pack of matching, engine-ready 3D models, made with the [Sloyd API](https://www.sloyd.ai/api).
 
 ![40 low-poly dungeon props made by the Game Art Department skills](examples/low-poly-dungeon/images/contact-sheet.png)
 
-*A real run: 40 props, 5 variants and a destructible barrel in 29 minutes for 1,495 credits (~$20).
-[See the pack](examples/low-poly-dungeon/).*
-
-```
-/plugin marketplace add Sloydai/game-art-skills
-/plugin install game-art@sloyd-game-art
+```sh
+npx skills add Sloydai/game-art-skills
 ```
 
-## The team
+Works with Claude Code, Codex, Cursor, opencode, Kiro, and GitHub Copilot. You need your own [Sloyd API key](#2-add-your-sloyd-api-key). See [Install](#install) for manual setup.
 
+Made by [Sloyd](https://sloyd.ai). If it saves you a week of modelling, give it a star.
+
+AI is great at making one cool 3D model, and bad at making 40 that look like they belong in the same game: a realistic barrel next to a cartoon chest, five different wood colors, a pedestal nobody asked for under the mushrooms.
+
+These skills work like a small art team. An art director locks the style and tests it on 3 props before anything else is made. Then the team plans the pack, builds it, reviews every model, remakes the weak ones, and exports the result for your engine.
+
+## What it does
+
+1. **Locks the style.** The art director writes `style-bible.md` (palette, poly budget, proportions, one Sloyd style) and tests it on 3 props.
+2. **Plans the pack.** It picks a mix of sizes and asset types that a real level needs, then shows you the cost before spending anything.
+3. **Builds it.** Concept image first, then 3D, 5 models at a time. It resumes after interruptions and never pays twice.
+4. **Reviews the set.** It renders every model, compares them side by side, and remakes the outliers.
+5. **Adds variants and parts.** Gold, rusty, frozen or team-color versions from one mesh, and destructible or modular pieces.
+6. **Exports for your engine.** Unity, Godot, Unreal or Roblox, at real-world scale, sitting on the floor, with per-engine names and import notes.
+
+| Skill | Role |
+|---|---|
+| `game-art-director` | Runs the whole pipeline from one request. Start here. |
+| `art-director` | Writes and tests the style bible |
+| `concept-artist` | Concept images that turn into clean 3D |
+| `modeler` | Text, image or multi-view to 3D |
+| `look-dev` | Material, team-color and rarity variants |
+| `asset-pack-builder` | Batched, resumable pack runs |
+| `kitbasher` | Destructible and modular parts |
+| `engine-export` | Scale, pivots, naming and import guides per engine |
+| `sloyd-api` | Shared setup: API key, credits, job polling, errors |
+
+## Real example
+
+We asked for 40 props for a low-poly dungeon crawler. [See the pack.](examples/low-poly-dungeon/)
+
+- **Result:** 40 props, 5 variants and a destructible barrel in 29 minutes, for 1,495 credits (about $20).
+- **The first style test failed.** Every prop got every palette color, and the mushrooms grew a stone pedestal. The art director fixed the rules and retested before making the other 37.
+- **Review caught 4 weak models**, which it remade: a blob-shaped boulder, an anvil with no stump, a plain chair and a soft coin stack.
+
+![Variants](examples/low-poly-dungeon/images/variants-sheet.png)
+
+## Install
+
+### 1. Add the skills
+
+With the [`skills` CLI](https://github.com/vercel-labs/skills), in your game project:
+
+```sh
+npx skills add Sloydai/game-art-skills
 ```
-game-art/
-├── game-art-director     runs the whole pipeline from one prompt, with budget gates
-├── art-director          locks style-bible.md before anything is generated (the anti-slop step)
-├── concept-artist        concept sheets that survive the trip to 3D
-├── modeler               text, image or multi-view to GLB; picks the right route per asset
-├── look-dev              rusty, frozen, gold, team-color and rarity variants from one mesh
-├── asset-pack-builder    "40 props for my dungeon": batched, resumable runs, manifest.json and gallery.html
-├── kitbasher             destructible fragments and modular parts
-├── engine-export         scale, pivots, naming, collision and LOD notes for Unity, Godot, Unreal and Roblox
-└── sloyd-api             shared plumbing: credentials, credits, job polling, errors, REST fallback
+
+Or as a Claude Code plugin, which also connects the Sloyd MCP server for you:
+
+```sh
+claude plugin marketplace add Sloydai/game-art-skills
+claude plugin install game-art@sloyd-game-art
 ```
 
-Each role hands its output to the next:
+Or copy the folders in [`skills/`](skills/) into your agent's skills directory. Keep all 9 together, because they call each other's scripts.
 
-1. art-director writes `style-bible.md`
-2. concept-artist and modeler read the bible
-3. asset-pack-builder turns the bible into `plan.json` and `manifest.json`
-4. look-dev and kitbasher add to the manifest
-5. engine-export turns the manifest into `export/<engine>/` with an `IMPORT.md`
+| Agent | Project-level | User-level |
+| --- | --- | --- |
+| Claude Code | `.claude/skills/` | `~/.claude/skills/` |
+| Codex | `.agents/skills/` | `~/.agents/skills/` |
+| opencode | `.opencode/skills/` | `~/.config/opencode/skills/` |
+| Kiro | `.kiro/skills/` | `~/.kiro/skills/` |
+| GitHub Copilot | `.github/skills/` | |
 
-## What you get
+For example, for Claude Code in the current project:
 
-```
-art/low-poly-dungeon/
-├── style-bible.md        genre, camera, palette, poly style, proportions, genStyleId, prompt template
-├── plan.json             40 assets by category, size, height and route
-├── manifest.json         every asset: jobIds, URLs, files, triangle counts, export records
-├── concepts/  models/  variants/  parts/
-├── export/godot/         dng_barrel_a.glb ... + IMPORT.md   (or unity/, unreal/, roblox/)
-├── gallery.html          orbit every model in the browser; ?sheet=1 for a contact sheet
-└── README.md             pack summary, credits used, how to import
+```sh
+git clone --depth 1 https://github.com/Sloydai/game-art-skills.git /tmp/game-art-skills
+mkdir -p .claude/skills
+cp -r /tmp/game-art-skills/skills/* .claude/skills/
 ```
 
-## Setup
+### 2. Add your Sloyd API key
 
-1. **Get your own Sloyd API key.** Each user brings their own credentials, and generations are
-   billed to your prepaid credits.
-   1. Go to [api-dashboard.sloyd.ai](https://api-dashboard.sloyd.ai), open **API Keys**, and
-      click **Generate Key**. Copy the secret; it is shown once.
-   2. Buy credits under **Usage & Billing**. The minimum is $12 for 900 credits.
-2. **Export the key** in the shell you start your agent from. Or copy `.env.example` to a
-   git-ignored `.env`.
+Each person uses their own key, and generations are billed to their own credits.
 
-   ```bash
+1. Sign in at [api-dashboard.sloyd.ai](https://api-dashboard.sloyd.ai), open **API Keys** and click **Generate Key**. Copy the secret; it is shown once.
+2. Buy credits under **Usage & Billing**. The minimum is $12 for 900 credits.
+3. Set the key in the terminal you start your agent from:
+
+   ```sh
    export SLOYD_CLIENT_ID="sok_live_..."
    export SLOYD_CLIENT_SECRET="..."
    ```
 
-3. **Install the plugin** (above). It registers Sloyd's hosted MCP server
-   (`https://api.sloyd.ai/api/mcp`) using those two environment variables. To add the server by
-   hand instead:
+   On Windows PowerShell: `$env:SLOYD_CLIENT_ID="sok_live_..."` and `$env:SLOYD_CLIENT_SECRET="..."`.
 
-   ```bash
-   claude mcp add --transport http sloyd https://api.sloyd.ai/api/mcp \
-     --header "x-client-id: $SLOYD_CLIENT_ID" \
-     --header "x-client-secret: $SLOYD_CLIENT_SECRET"
-   ```
+   Or put both lines in a `.env` file in your project (copy [`.env.example`](.env.example)) and make sure `.env` is in your `.gitignore`.
 
-Other agents (Cursor, VS Code, Codex and others) can load the `skills/` folders directly. Clients
-without MCP use the bundled standard-library Python client, or curl
-(`skills/sloyd-api/references/rest-fallback.md`). Credentials are only read from the environment
-and never written to any file.
+Never paste the secret into chat or commit it.
 
-## Example prompts
+### 3. Optional: connect the Sloyd MCP server
 
-- `Make 40 props for my low-poly dungeon crawler in Godot. Isometric camera, budget 1,500 credits.`
+The skills work without it: they call Sloyd through a bundled Python script (Python 3.9+, no packages needed). If your agent supports MCP, connecting the server lets it call Sloyd tools directly. In Claude Code:
+
+```sh
+claude mcp add --transport http sloyd https://api.sloyd.ai/api/mcp \
+  --header "x-client-id: $SLOYD_CLIENT_ID" \
+  --header "x-client-secret: $SLOYD_CLIENT_SECRET"
+```
+
+Configs for Cursor, VS Code and other clients are in [`skills/sloyd-api/references/clients.md`](skills/sloyd-api/references/clients.md).
+
+## Usage
+
+Describe your game to your agent:
+
+> Use game-art-director to make 40 props for my low-poly dungeon crawler in Godot. Isometric camera, budget 1,500 credits.
+
+The agent checks your key and balance, shows you the style test and the cost, and waits for your yes before building the pack. You get a folder like this:
+
+```
+art/low-poly-dungeon/
+├── style-bible.md        the locked look
+├── plan.json             the asset list
+├── manifest.json         every asset, job and file
+├── concepts/  models/  variants/  parts/
+├── export/godot/         engine-ready files + IMPORT.md
+└── gallery.html          orbit every model in the browser
+```
+
+Other things to ask:
+
 - `Lock a style bible for a cozy farming sim on mobile, then show me three test props.`
-- `Turn this sketch into a game-ready GLB for Unity.` (attach an image)
-- `Give the treasure chest gold, rusty and frozen variants, plus red and blue team versions.`
-- `Make the barrel destructible: split it into 6 pieces and give me the Unreal import steps.`
+- `Turn this sketch into a game-ready model for Unity.` (attach an image)
+- `Give the treasure chest gold, rusty and frozen variants.`
+- `Make the barrel destructible: split it into 6 pieces.`
 - `Export the whole pack for Roblox and warn me about anything over the triangle limit.`
-- `Drop the chest and the torches into my open Godot scene so I can check the scale.`
 
 ## Cost
 
-Sloyd API credits ($1 = 75 credits). The agent always shows the estimate and your balance before
-spending.
+Sloyd API credits, at 75 credits per $1. The agent always shows the estimate and your balance before spending.
 
 | Step | Credits |
 |---|---|
 | Concept image | 10 |
-| Image edit | 15 |
-| Text to 3D (textured) | 25 |
-| Image to 3D (textured) | 20 |
-| Retexture variant | 15 |
+| Image to 3D | 20 |
+| Text to 3D | 25 |
+| Variant (retexture) | 15 |
 | Split into parts | 40 |
 
-The launch pack was planned at 1,270 credits (40 props, 5 variants, 1 split). It came in at
-1,495 credits (~$20) once style tests, 4 rerolls, a texture fix and a rejected variant were
-included. That is 12% over plan, inside the 15% reserve the planner adds. Full breakdown:
-[examples/low-poly-dungeon](examples/low-poly-dungeon/README.md).
-Current prices: [sloyd.ai/api/pricing](https://www.sloyd.ai/api/pricing).
-
-## Example: low-poly dungeon (40 props)
-
-[`examples/low-poly-dungeon/`](examples/low-poly-dungeon/) is the real output of one run:
-
-- the style bible, including the failed first style test and what changed
-- the plan, a run record (settings, triangles, spend, rerolls) and the concept images
-- rendered contact sheets and per-engine `IMPORT.md` files
-- the 3D models are not included: run the plan with your own Sloyd key to make them
-
-## Requirements
-
-- Python 3.9+ for the helper scripts (standard library only)
-- A Sloyd API key with credits
-- Optional:
-  - Node.js 18+ with Playwright, for rendered thumbnails and contact sheets (`render_sheet.mjs`)
-  - Unity's glTFast importer (`com.unity.cloud.gltfast`)
-  - the [Sloyd Godot Bridge](https://github.com/Sloydai/sloyd-godot-bridge)
-  - `npx gltfpack` for LODs
+A 40-prop pack is about 1,300 to 1,500 credits ($17 to $20), including style tests and rerolls. Current prices: [sloyd.ai/api/pricing](https://www.sloyd.ai/api/pricing).
 
 ## Privacy
 
-Prompts and images you send are processed by Sloyd. See the
-[Sloyd privacy policy](https://www.sloyd.ai/privacy-policy).
+Prompts and images you send are processed by Sloyd. See the [Sloyd privacy policy](https://www.sloyd.ai/privacy-policy).
 
 ## License
 
-MIT
+[MIT](LICENSE)

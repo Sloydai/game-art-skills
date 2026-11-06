@@ -5,6 +5,8 @@ description: Use when the user wants many game assets at once, as a set that mus
 
 # Asset Pack Builder: 40 props that belong to the same game
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 A pack is a design problem before it is a batch job. The difference between a usable pack and 40
 random models is the plan: coverage of what a level needs, size and shape variety, and one locked
 template. This skill owns that plan, runs it reliably, and produces `manifest.json`, the hand-off
@@ -68,7 +70,7 @@ Show the user the list grouped by category (one line per asset) before pricing.
 ## 3. Price, then get a yes
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --estimate
+python3 <skills>/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --estimate
 ```
 
 This prints the cost per tool, the total, a 15% reroll reserve, the live balance and what remains
@@ -80,7 +82,7 @@ short, say by how much and link https://api-dashboard.sloyd.ai. Offer a smaller 
 ## 4. Run
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --yes
+python3 <skills>/asset-pack-builder/scripts/run_pack.py art/<pack>/plan.json --yes
 ```
 
 The runner:
@@ -107,7 +109,7 @@ each finishes. Record every jobId in `manifest.json` as you go, in the same sche
 ## 5. QA the pack as a set
 
 ```bash
-python3 ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/build_gallery.py art/<pack>/manifest.json
+python3 <skills>/asset-pack-builder/scripts/build_gallery.py art/<pack>/manifest.json
 cd art/<pack> && python3 -m http.server 8000      # open http://localhost:8000/gallery.html
 ```
 
@@ -116,7 +118,7 @@ headless Chromium, then open the images:
 
 ```bash
 npm i playwright && npx playwright install chromium        # once
-node ${CLAUDE_PLUGIN_ROOT}/skills/asset-pack-builder/scripts/render_sheet.mjs art/<pack>/manifest.json
+node <skills>/asset-pack-builder/scripts/render_sheet.mjs art/<pack>/manifest.json
 ```
 
 This writes:
@@ -131,7 +133,7 @@ Review all assets together. Consistency problems only show side by side.
 - [ ] One palette across the pack. Flag any asset whose dominant color is off-bible.
 - [ ] One level of detail. Flag any asset noticeably busier or smoother than its neighbours.
 - [ ] Silhouettes are distinct at thumbnail size (`gallery.html?sheet=1` shows the whole pack).
-- [ ] Triangle counts are in budget. Run `python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py inspect
+- [ ] Triangle counts are in budget. Run `python3 <skills>/engine-export/scripts/glb_tool.py inspect
       art/<pack>/models/*.glb`.
 - [ ] Failed assets are listed with their error.
 

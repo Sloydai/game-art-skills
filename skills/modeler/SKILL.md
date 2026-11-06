@@ -5,6 +5,8 @@ description: Use when the user needs an actual 3D model (GLB) for a game, whethe
 
 # Modeler: the right route for each asset
 
+> **Script paths:** `<skills>` below means the folder this skill is installed in, the parent of this `SKILL.md`'s folder (for example `.claude/skills` or `~/.claude/skills`). All Game Art Department skills sit side by side there.
+
 Sloyd has three ways to make a model. Choosing well saves credits and rerolls. Read
 `style-bible.md` first for `genStyleId`, `topology`, `textureResolution` and face budgets.
 
@@ -66,7 +68,7 @@ comes first, because generators weight early words more.
 ## Review the model
 
 Open the GLB (any glTF viewer, the pack gallery from asset-pack-builder, or
-`python3 ${CLAUDE_PLUGIN_ROOT}/skills/engine-export/scripts/glb_tool.py inspect file.glb` for numbers). Check:
+`python3 <skills>/engine-export/scripts/glb_tool.py inspect file.glb` for numbers). Check:
 
 - [ ] Silhouette matches the concept or prompt; no missing parts or fused handles
 - [ ] Triangle count within about 25% of the budget (`glb_tool.py inspect` reports it)
